@@ -1,0 +1,84 @@
+Fri Sep 29 15:02:33 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* Make it distcheck, 
+
+Fri Sep 29 14:51:20 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* configure.ac: Bump to .163
+	
+	* configure.ac, Makefile.am, po/*: Add gobbledigook to enable
+	translation
+
+2006-09-18  Soren Sandmann  <ssp@localhost.localdomain>
+
+	* configure.ac: Bump to .137
+
+	* Makefile.am: Make sure directories exist before installing
+	things in them.
+
+Mon Sep 18 16:21:06 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* Makefile.am (EXTRA_DIST): Add desktop-effects??.png to
+	EXTRA_DIST. Touch toplevel theme directory.
+
+Mon Sep 18 16:03:54 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* desktop-effects.c (main): Set icon name.
+
+	* configure.ac: Bump to 0.6.107
+
+	* desktop-effects??.png: Add new icons from Diana
+
+	* Makefile.am: install the icons.
+
+2006-09-15  Soren Sandmann  <ssp@localhost.localdomain>
+
+	* configure.ac: Bump to 0.6.83.
+	
+	* desktop-effects.c (show_dialog_timeout): If compiz doesn't
+	assert itself as window manager within eight seconds, show an
+	error message. 
+
+2006-09-01  Soren Sandmann  <ssp@localhost.localdomain>
+
+	* configure.ac: Bump to 0.6.61
+	Use the plane plugin when not using the cube.
+
+2006-08-25  Soren Sandmann  <ssp@localhost.localdomain>
+
+	* configure.ac: Bump to 0.6.41
+
+2006-08-25  Soren Sandmann  <ssp@localhost.localdomain>
+
+	* desktop-effects.c (set_busy): New function to set a busy cursor
+	while compiz is starting.
+	(get_wm_window, get_current_window_manager): New functions to
+	discover whether compiz has started.
+	(show_dialog_timeout) present the window on every iteration; show
+	the timed dialog if compiz has started.
+	(on_enable_toggled): apply settings before starting metacity.
+
+Fri Aug 25 17:16:43 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* desktop-effects.c (show_dialog_timeout): New function to
+	eventually prevent showing the cop out dialog before compiz is
+	started.
+
+2006-08-25  Kristian Høgsberg  <krh@redhat.com>
+
+	* configure.ac: Bump release to 0.6.19.
+
+	* Makefile.am: Add 'make tag' convenience.
+
+	* desktop-effects.c (on_enable_toggled): Patch from Ray Strode to
+	unlink session file on switching.
+
+	* configure.ac: Output desktop-effects.desktop.
+
+	* desktop-effects.c (update_plugins): Add the scale and screenshot
+	plugins to the mix.
+	
+Fri Aug 25 15:56:07 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* configure.ac: Don't attempt autogeneration of
+	desktop-effects.desktop
