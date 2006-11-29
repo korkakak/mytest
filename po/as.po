@@ -1,21 +1,25 @@
+# translation of as.po to Chinese (Traditional)
 # Assamese translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2006.
 #
+# Automatically generated, 2006.
+# Chester Cheng <ccheng@redhat.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-29 08:58-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2006-11-30 00:51+1000\n"
+"Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
+"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: KBabel 1.11.4\n"
 
+# Remove this line or KBabel regards it as an invalid header
+# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 #: ../desktop-effects.c:140
 #, c-format
 msgid ""
@@ -66,3 +70,4 @@ msgstr ""
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
 msgstr ""
+
