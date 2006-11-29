@@ -1,0 +1,68 @@
+# Sinhalese translations for PACKAGE package.
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"PO-Revision-Date: 2006-11-29 08:58-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../desktop-effects.c:140
+#, c-format
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../desktop-effects.c:184
+msgid "Keep Settings"
+msgstr ""
+
+#: ../desktop-effects.c:190
+msgid "Do you want to keep these settings?"
+msgstr ""
+
+#: ../desktop-effects.c:212
+msgid "Use _previous settings"
+msgstr ""
+
+#: ../desktop-effects.c:213
+msgid "_Keep settings"
+msgstr ""
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+msgid "Desktop Effects"
+msgstr ""
+
+#: ../desktop-effects.desktop.in.h:2
+msgid "Select desktop effects"
+msgstr ""
+
+#: ../desktop-effects.glade.h:1
+msgid "<b>Desktop Effects</b>"
+msgstr ""
+
+#: ../desktop-effects.glade.h:3
+msgid "Enable Desktop _Effects"
+msgstr ""
+
+#: ../desktop-effects.glade.h:4
+msgid "Windows _Wobble when Moved"
+msgstr ""
+
+#: ../desktop-effects.glade.h:5
+msgid "Workspaces on a C_ube"
+msgstr ""
