@@ -1,20 +1,34 @@
+# translation of pt_BR.po to Brazilian Portuguese
 # Portuguese translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
+# Valnir Ferreira Jr., 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-29 08:58-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2006-11-30 09:33+1000\n"
+"Last-Translator: Valnir Ferreira Jr.\n"
+"Language-Team: Brazilian Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: KBabel 1.9.1\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
@@ -26,45 +40,46 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Testando a nova configuração. Se você não responder em %d segundo, a configuração anterior será restaurada."
+msgstr[1] "Testando a nova configuração. Se você não responder em %d segundos, a configuração anterior será restaurada."
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
-msgstr ""
+msgstr "Manter Configuração"
 
 #: ../desktop-effects.c:190
 msgid "Do you want to keep these settings?"
-msgstr ""
+msgstr "Deseja manter estas configurações?"
 
 #: ../desktop-effects.c:212
 msgid "Use _previous settings"
-msgstr ""
+msgstr "Usar _configuração anterior"
 
 #: ../desktop-effects.c:213
 msgid "_Keep settings"
-msgstr ""
+msgstr "_Manter configuração"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
-msgstr ""
+msgstr "Efeitos da Área de Trabalho"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr ""
+msgstr "Selecionar efeitos da área de trabalho"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr ""
+msgstr "<b>Efeitos da Área de Trabalho</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr ""
+msgstr "Ativar _Efeitos da Área de Trabalho"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr ""
+msgstr "Janelas _Balançam quando Movidas"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr ""
+msgstr "Áreas de Trabalho em um C_ubo"
+
