@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-30 16:33+1000\n"
+"PO-Revision-Date: 2006-11-30 17:25+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,47 +30,47 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] "sdfs %d"
-msgstr[1] "sdfs %d"
+msgstr[0] "새 설정을 테스트합니다. %d 초 안에 응답하지 않으실 경우 이전 설정이 복구됩니다."
+msgstr[1] "새 설정을 테스트합니다. %d 초 안에 응답하지 않으실 경우 이전 설정이 복구됩니다."
 msgstr[2] ""
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
-msgstr ""
+msgstr "설정 유지"
 
 #: ../desktop-effects.c:190
 msgid "Do you want to keep these settings?"
-msgstr ""
+msgstr "설정을 유지하시겠습니까?"
 
 #: ../desktop-effects.c:212
 msgid "Use _previous settings"
-msgstr ""
+msgstr "이전 설정 사용(_p)"
 
 #: ../desktop-effects.c:213
 msgid "_Keep settings"
-msgstr ""
+msgstr "설정 유지(_K)"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
-msgstr ""
+msgstr "데스크탑 효과"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr ""
+msgstr "데스크탑 효과 선택"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr ""
+msgstr "<b>데스크탑 효과</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr ""
+msgstr "데스크탑 효과 활성화(_E)"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr ""
+msgstr "이동시 윈도우 요동(_W)"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr ""
+msgstr "입방체에서의 작업 공간(_u)"
 
