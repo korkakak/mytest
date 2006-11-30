@@ -1,19 +1,23 @@
+# translation of bn_IN.po to Bengali India
 # Bengali translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2006.
+# Runa Bhattacharjee <runab@redhat.com>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-29 08:58-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2006-11-30 11:07+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+"Language-Team: Bengali India\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
@@ -25,45 +29,46 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "বৈশিষ্ট্যের নতুন মান পরীক্ষা করা হচ্ছে। %d সেকেন্ডের মধ্যে কোনো প্রতিক্রিয়া না হলে পূর্ববর্তী বৈশিষ্ট্য অপরিবর্তিত থাকবে।"
+msgstr[1] "বৈশিষ্ট্যের নতুন মান পরীক্ষা করা হচ্ছে। %d সেকেন্ডের মধ্যে কোনো প্রতিক্রিয়া না হলে পূর্ববর্তী বৈশিষ্ট্য অপরিবর্তিত থাকবে।"
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
-msgstr ""
+msgstr "বৈশিষ্ট্য প্রয়োগ করা হবে"
 
 #: ../desktop-effects.c:190
 msgid "Do you want to keep these settings?"
-msgstr ""
+msgstr "এই বৈশিষ্ট্য প্রয়োগ করা হবে কি?"
 
 #: ../desktop-effects.c:212
 msgid "Use _previous settings"
-msgstr ""
+msgstr "পূর্ববর্তী বৈশিষ্ট্য প্রয়োগ করা হবে (_p)"
 
 #: ../desktop-effects.c:213
 msgid "_Keep settings"
-msgstr ""
+msgstr "বৈশিষ্ট্য প্রয়োগ করা হবে (_K)"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
-msgstr ""
+msgstr "ডেস্কটপ ইফেক্টস"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr ""
+msgstr "ডেস্কটপের ইফেক্ট নির্বাচন করুন"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr ""
+msgstr "<b>ডেস্কটপের ইফেক্ট</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr ""
+msgstr "ডেস্কটপ ইফেক্ট সক্রিয় করা হবে (_E)"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr ""
+msgstr "স্থান পরিবর্তন করা হলে উইন্ডো ঝাঁকানো হবে (_W)"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr ""
+msgstr "ঘনবস্তু অর্থাৎ কিউবের মধ্যে কর্মক্ষেত্র প্রদর্শন (_u)"
+
