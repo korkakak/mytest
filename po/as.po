@@ -1,22 +1,24 @@
-# translation of as.po to Chinese (Traditional)
+# translation of as.po to Assamese
 # Assamese translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Automatically generated, 2006.
 # Chester Cheng <ccheng@redhat.com>, 2006.
+# Amitakhya Phukan <aphukan@redhat.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-30 00:51+1000\n"
-"Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"PO-Revision-Date: 2006-11-30 12:25+0530\n"
+"Last-Translator: Amitakhya Phukan <aphukan@redhat.com>\n"
+"Language-Team: Assamese <assam@mm.assam-glug.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
@@ -28,46 +30,46 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "নতুন পছন্দসমূহ পৰীক্ষা কৰা হৈছে । যদি আপুনি %d ছেকেণ্ডত কোনো উত্তৰ নিদিয়ে তেনেহ'লে পূৰ্বৰ পছন্দ পুনঃপ্ৰতিষ্ঠা কৰা হ'ব ।"
+msgstr[1] "নতুন পছন্দসমূহ পৰীক্ষা কৰা হৈছে । যদি আপুনি %d ছেকেণ্ডসমূহত কোনো উত্তৰ নিদিয়ে তেনেহ'লে পূৰ্বৰ পছন্দ পুনঃপ্ৰতিষ্ঠা কৰা হ'ব ।"
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
-msgstr ""
+msgstr "পছন্দসমূহ ৰাখক"
 
 #: ../desktop-effects.c:190
 msgid "Do you want to keep these settings?"
-msgstr ""
+msgstr "আপুনি এই পছন্দসমূহ ৰাখিব বিচাৰে নে ?"
 
 #: ../desktop-effects.c:212
 msgid "Use _previous settings"
-msgstr ""
+msgstr "পূৰ্বৰ পছন্দ ৰাখক (_p)"
 
 #: ../desktop-effects.c:213
 msgid "_Keep settings"
-msgstr ""
+msgstr "পছন্দ ৰাখক (_K)"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
-msgstr ""
+msgstr "ডেষ্কট'পৰ গুণ"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr ""
+msgstr "ডেষ্কট'পৰ গুণ নিৰ্ব্বাচন কৰক"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr ""
+msgstr "<b>ডেষ্কট'পৰ গুন</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr ""
+msgstr "ডেষ্কট'পৰ গুণ সক্ৰীয় কৰক (_E)"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr ""
+msgstr "পৰ্দ্দাসমূহ লৰালে টাল মাৰে (_W)"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr ""
+msgstr "এটা ঘনক্ষেত্ৰত কাৰ্য্যক্ষেত্ৰসমূহ (_)"
 
