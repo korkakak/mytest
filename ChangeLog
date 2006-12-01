@@ -1,3 +1,9 @@
+Fri Dec  1 13:24:23 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* desktop-effects.c: New functions has_xinerama() and
+	has_composite(). Show error dialogs if compiz can't be
+	supported.
+
 2006-11-29  Matthias Clasen  <mclasen@redhat.com>
 
 	* po/desktop-effects.pot: Add to CVS

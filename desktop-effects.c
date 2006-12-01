@@ -1,11 +1,3 @@
-/* TODO:
- *
- *	- make it set the session gconf value.
- *
- *	- add to compiz package
- *
- */
-
 #include <config.h>
 #include <glade/glade.h>
 #include <gtk/gtk.h>
@@ -716,6 +708,41 @@ init_app (App *app,
     return TRUE;
 }
 
+static gboolean
+has_xinerama (void)
+{
+    int dummy1, dummy2;
+
+    if (XineramaQueryExtension (GDK_DISPLAY (), &dummy1, &dummy2))
+	return TRUE;
+    
+    return FALSE;
+}
+
+static gboolean
+has_composite ()
+{
+    int dummy1, dummy2;
+
+    if (XCompositeQueryExtension (GDK_DISPLAY (), &dummy1, &dummy2))
+	return TRUE;
+
+    return FALSE;
+}
+
+static void
+show_alert (const char *text)
+{
+    GtkWidget *dialog;
+    
+    dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
+				     GTK_MESSAGE_ERROR,
+				     GTK_BUTTONS_OK,
+				     text);
+    
+    gtk_dialog_run (GTK_DIALOG (dialog));
+}
+
 int
 main (int argc, char **argv)
 {
@@ -728,7 +755,19 @@ main (int argc, char **argv)
     textdomain (GETTEXT_PACKAGE);
     
     gtk_init (&argc, &argv);
+
+    if (has_xinerama())
+    {
+	show_alert ("Desktop effects do not work with Xinerama");
+	return 0;
+    }
     
+    if (!has_composite())
+    {
+	show_alert ("The Composite extension is not available");
+	return 0;
+    }
+
     app = g_new0 (App, 1);
     
     if (!init_app (app, &err))
