@@ -1,3 +1,7 @@
+Fri Dec  1 13:53:51 2006  Søren Sandmann  <sandmann@redhat.com>
+
+	* configure.ac: Bump to .191
+
 Fri Dec  1 13:24:23 2006  Søren Sandmann  <sandmann@redhat.com>
 
 	* desktop-effects.c: New functions has_xinerama() and
