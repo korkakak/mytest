@@ -1,3 +1,7 @@
+2006-12-13  Matthias Clasen <mclasen@redhat.com> 
+	
+	*  configure.ac: Set ALL_LINGUAS, bump version to .192
+
 Tue Dec  5 11:33:52 2006  Søren Sandmann  <sandmann@redhat.com>
 
 	* desktop-effects.c: Add copyright statement
