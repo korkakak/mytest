@@ -1,3 +1,7 @@
+2006-12-21  Matthias Clasen <mclasen@redhat.com> 
+	
+	*  configure.ac: Set ALL_LINGUAS, bump version to .211
+
 2006-12-13  Matthias Clasen <mclasen@redhat.com> 
 	
 	*  configure.ac: Set ALL_LINGUAS, bump version to .192
