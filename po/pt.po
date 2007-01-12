@@ -1,4 +1,4 @@
-# 
+# Portuguese localization of Red Hat Linux
 msgid ""
 msgstr ""
 "Project-Id-Version: pt\n"
