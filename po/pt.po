@@ -58,7 +58,6 @@ msgid "Enable Desktop _Effects"
 msgstr "Activar _Efeitos da Área de Trabalho"
 
 #: ../desktop-effects.glade.h:4
-#, fuzzy
 msgid "Windows _Wobble when Moved"
 msgstr "Janelas são _Sacudidas quando movidas"
 
