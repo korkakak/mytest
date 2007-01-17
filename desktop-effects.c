@@ -246,7 +246,7 @@ run_timed_dialog (App *app)
 static gboolean
 start_compiz (App *app, GError **err)
 {
-    if (!g_spawn_command_line_async ("gnome-window-decorator", err))
+    if (!g_spawn_command_line_async ("gtk-window-decorator", err))
 	return FALSE;
     
     if (!g_spawn_command_line_async ("compiz --replace gconf", err))
@@ -559,15 +559,6 @@ contains_string (GSList *plugins,
     return FALSE;
 }
 
-static GSList *
-preserve (GSList *new, GSList *old, char *name)
-{
-    if (contains_string (old, name))
-	return g_slist_prepend (new, name);
-    else
-	return new;
-}
-
 static gboolean
 update_plugins (App     *app,
 		GError **err)
@@ -576,6 +567,7 @@ update_plugins (App     *app,
     GSList *plugins;
     Settings settings;
     GSList *new_setting = NULL;
+    GSList *old;
     
     get_widget_settings (app, &settings);
     
@@ -587,42 +579,47 @@ update_plugins (App     *app,
 	return FALSE;
     }
     
-    /* compiz wants the plugin listed in a specific order,
-     * so we can't just add and delete from the list
+    /* Disable/enable the plugins that control the features we care
+     * about.  Try no to assume too much about what plugins are loaded
+     * in what order.
      */
     
-    new_setting = g_slist_prepend (new_setting, "gconf");
-    
-    new_setting = preserve (new_setting, plugins, "decoration");
-    
-    if (settings.wobbly)
-	new_setting = g_slist_prepend (new_setting, "wobbly");
-    
-    new_setting = preserve (new_setting, plugins, "fade");
-    new_setting = preserve (new_setting, plugins, "minimize");
-    
-    if (settings.cube)
+    for (old = plugins; old != NULL; old = old->next)
     {
-	new_setting = g_slist_prepend (new_setting, "cube");
-	new_setting = g_slist_prepend (new_setting, "rotate");
-	new_setting = g_slist_prepend (new_setting, "zoom");
+      char *name = old->data;
+
+      if (strcmp (name, "cube") == 0 ||
+	  strcmp (name, "rotate") == 0 ||
+	  strcmp (name, "zoom") == 0 ||
+	  strcmp (name, "plane") == 0 ||
+	  strcmp (name, "wobbly") == 0)
+	continue;
+
+      new_setting = g_slist_prepend (new_setting, name);
+
+      if (strcmp (name, "decoration") == 0)
+      {
+	if (settings.wobbly)
+	  new_setting = g_slist_prepend (new_setting, "wobbly");
+      }
+      else if (strcmp (name, "minimize") == 0)
+      {
+	if (settings.cube)
+	{
+	  new_setting = g_slist_prepend (new_setting, "cube");
+	  new_setting = g_slist_prepend (new_setting, "rotate");
+	  new_setting = g_slist_prepend (new_setting, "zoom");
+	}
+	else
+	  new_setting = g_slist_prepend (new_setting, "plane");
+      }
+
     }
-    else
-    {
-	new_setting = g_slist_prepend (new_setting, "plane");
-    }
-    
-    new_setting = preserve (new_setting, plugins, "move");
-    new_setting = preserve (new_setting, plugins, "resize");
-    new_setting = preserve (new_setting, plugins, "place");
-    new_setting = preserve (new_setting, plugins, "scale");
-    new_setting = preserve (new_setting, plugins, "switcher");
-    new_setting = preserve (new_setting, plugins, "water");
-    new_setting = preserve (new_setting, plugins, "screenshot");
     
     new_setting = g_slist_reverse (new_setting);
     
-    gconf_client_set_list (app->gconf, PLUGIN_LIST_KEY, GCONF_VALUE_STRING, new_setting, &tmp);
+    gconf_client_set_list (app->gconf, PLUGIN_LIST_KEY,
+			   GCONF_VALUE_STRING, new_setting, &tmp);
     if (tmp)
     {
 	g_propagate_error (err, tmp);
