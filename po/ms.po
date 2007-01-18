@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-12-25 14:01+0800\n"
+"PO-Revision-Date: 2007-01-18 23:09+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -25,18 +25,16 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: ../desktop-effects.c:184
-#, fuzzy
 msgid "Keep Settings"
-msgstr "Tetapan Lain-lain"
+msgstr "Simpan Tetapan"
 
 #: ../desktop-effects.c:190
 msgid "Do you want to keep these settings?"
 msgstr ""
 
 #: ../desktop-effects.c:212
-#, fuzzy
 msgid "Use _previous settings"
-msgstr "Gunakan setting admin sistem"
+msgstr "Guna teta_pan terdahulu"
 
 #: ../desktop-effects.c:213
 msgid "_Keep settings"
@@ -61,7 +59,7 @@ msgstr "Hidupkan K_esan Desktop"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr ""
+msgstr "Tetingkap Bergoyang apabila Bergerak"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
