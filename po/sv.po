@@ -1,0 +1,64 @@
+# Svenska translation of desktop-effects.
+# Copyright (C) 2007 Magnus Larsson <fedoratrans@gmail.com>
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-effects VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"PO-Revision-Date: 2007-01-18 16:29-0500\n"
+"Last-Translator: Magnus Larsson <fedoratrans@gmail.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#: ../desktop-effects.c:140
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgstr ""
+"Provar de nya inställningarna. Om du inte agerar inom %d sekunder kommer de "
+"tidigare inställningarna användas."
+
+#: ../desktop-effects.c:184
+msgid "Keep Settings"
+msgstr "Behåll inställningar"
+
+#: ../desktop-effects.c:190
+msgid "Do you want to keep these settings?"
+msgstr "Vill du behålla dessa inställningar?"
+
+#: ../desktop-effects.c:212
+msgid "Use _previous settings"
+msgstr "Använd _tidigare inställningar"
+
+#: ../desktop-effects.c:213
+msgid "_Keep settings"
+msgstr "_Behåll inställningar"
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+msgid "Desktop Effects"
+msgstr "Skrivbordseffekter"
+
+#: ../desktop-effects.desktop.in.h:2
+msgid "Select desktop effects"
+msgstr "Välj skrivbordseffekter"
+
+#: ../desktop-effects.glade.h:1
+msgid "<b>Desktop Effects</b>"
+msgstr "<b>Skrivbordseffekter</b>"
+
+#: ../desktop-effects.glade.h:3
+msgid "Enable Desktop _Effects"
+msgstr "Aktivera skrivbords_effekter"
+
+#: ../desktop-effects.glade.h:4
+msgid "Windows _Wobble when Moved"
+msgstr "Fönster _skakar när de flyttas"
+
+#: ../desktop-effects.glade.h:5
+msgid "Workspaces on a C_ube"
+msgstr "Arbetsytor på en k_ub"
