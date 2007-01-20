@@ -1,0 +1,69 @@
+# Íslensk þýðing desktop-effects
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Richard Allen <ra@ra.is>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-effects\n"
+"Report-Msgid-Bugs-To: Richard Allen <ra@ra.is>\n"
+"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"PO-Revision-Date: 2007-01-20 22:10+0000\n"
+"Last-Translator: Richard Allen <ra@ra.is>\n"
+"Language-Team: is <kde-isl@molar.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+# Remove this line or KBabel regards it as an invalid header
+# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../desktop-effects.c:140
+#, c-format
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../desktop-effects.c:184
+msgid "Keep Settings"
+msgstr "Halda stillingum"
+
+#: ../desktop-effects.c:190
+msgid "Do you want to keep these settings?"
+msgstr "Viltu halda þessum stillingum?"
+
+#: ../desktop-effects.c:212
+msgid "Use _previous settings"
+msgstr "Nota _fyrri stillingar"
+
+#: ../desktop-effects.c:213
+msgid "_Keep settings"
+msgstr "H_alda stillingum"
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+msgid "Desktop Effects"
+msgstr "Skjáborðsbrellur"
+
+#: ../desktop-effects.desktop.in.h:2
+msgid "Select desktop effects"
+msgstr "Veldu skjáborðsbrellur"
+
+#: ../desktop-effects.glade.h:1
+msgid "<b>Desktop Effects</b>"
+msgstr "<b>Skjáborðsbrellur</b>"
+
+#: ../desktop-effects.glade.h:3
+msgid "Enable Desktop _Effects"
+msgstr "Virkja skjáborðsbrellur"
+
+#: ../desktop-effects.glade.h:4
+msgid "Windows _Wobble when Moved"
+msgstr "Gluggar t_itra þegar þeir eru færðir"
+
+#: ../desktop-effects.glade.h:5
+msgid "Workspaces on a C_ube"
+msgstr "Vinn_uborð á teningi"
