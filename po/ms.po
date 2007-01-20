@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2007-01-18 23:09+0800\n"
+"PO-Revision-Date: 2007-01-21 02:42+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -21,8 +21,8 @@ msgstr ""
 #, c-format
 msgid "Testing the new settings. If you don't respond in %d second the previous settings will be restored."
 msgid_plural "Testing the new settings. If you don't respond in %d seconds the previous settings will be restored."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Menguji tetapan baru. Jika anda tidak memberi respon dalam %d saat tetapan terdahulu akan dikembalikan"
+msgstr[1] "Menguji tetapan baru. Jika anda tidak memberi respon dalam %d saat tetapan terdahulu akan dikembalikan"
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
@@ -30,7 +30,7 @@ msgstr "Simpan Tetapan"
 
 #: ../desktop-effects.c:190
 msgid "Do you want to keep these settings?"
-msgstr ""
+msgstr "Adakah anda mahu menyimpan tetapan ini?"
 
 #: ../desktop-effects.c:212
 msgid "Use _previous settings"
