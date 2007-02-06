@@ -727,17 +727,6 @@ init_app (App *app,
 }
 
 static gboolean
-has_xinerama (void)
-{
-    int dummy1, dummy2;
-
-    if (XineramaQueryExtension (GDK_DISPLAY (), &dummy1, &dummy2))
-	return TRUE;
-    
-    return FALSE;
-}
-
-static gboolean
 has_composite ()
 {
     int dummy1, dummy2;
@@ -773,12 +762,6 @@ main (int argc, char **argv)
     textdomain (GETTEXT_PACKAGE);
     
     gtk_init (&argc, &argv);
-
-    if (has_xinerama())
-    {
-	show_alert ("Desktop effects do not work with Xinerama");
-	return 0;
-    }
     
     if (!has_composite())
     {
