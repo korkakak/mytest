@@ -1,5 +1,7 @@
 2007-02-06  Kristian Høgsberg  <krh@redhat.com>
 
+	* configure.ac: Bump to 0.7.1.
+
 	* desktop-effects.c: Drop check for Xinerama, release 0.7.1.
 
 2007-01-16  Kristian Høgsberg  <krh@redhat.com>
