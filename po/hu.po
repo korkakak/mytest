@@ -1,0 +1,69 @@
+# Translation of desktop-effects to Hungarian
+# Copyright © 2007 Fedora Translation Project
+# This file is distributed under the same license as the desktop-effects package.
+# Péter Sulyok <peti@sulyok.hu>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"PO-Revision-Date: 2007-03-12 19:27+0100\n"
+"Last-Translator: Péter Sulyok <peti@sulyok.hu>\n"
+"Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+
+#: ../desktop-effects.c:140
+#, c-format
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] ""
+"Az új beállítás tesztelése. Ha nem reagál %d másodpercen belül, akkor "
+"visszaáll az előző beállítás."
+
+#: ../desktop-effects.c:184
+msgid "Keep Settings"
+msgstr "Beállítás megtartása"
+
+#: ../desktop-effects.c:190
+msgid "Do you want to keep these settings?"
+msgstr "Meg akarja tartani e beállítást?"
+
+#: ../desktop-effects.c:212
+msgid "Use _previous settings"
+msgstr "_Előző beállítás használata"
+
+#: ../desktop-effects.c:213
+msgid "_Keep settings"
+msgstr "Beállítás meg_tartása"
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+msgid "Desktop Effects"
+msgstr "Asztalhatások"
+
+#: ../desktop-effects.desktop.in.h:2
+msgid "Select desktop effects"
+msgstr "Asztalhatások kiválasztása"
+
+#: ../desktop-effects.glade.h:1
+msgid "<b>Desktop Effects</b>"
+msgstr "<b>Asztalhatások</b>"
+
+#: ../desktop-effects.glade.h:3
+msgid "Enable Desktop _Effects"
+msgstr "Asztalhatások _engedélyezése"
+
+#: ../desktop-effects.glade.h:4
+msgid "Windows _Wobble when Moved"
+msgstr "Mozgatáskor _nyúlós ablakok"
+
+#: ../desktop-effects.glade.h:5
+msgid "Workspaces on a C_ube"
+msgstr "Munkaterületek _kockán"
