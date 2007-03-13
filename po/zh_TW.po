@@ -21,11 +21,15 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../desktop-effects.c:140
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Testing the new settings. If you don't respond in %d second the previous "
 "settings will be restored."
-msgstr "測試新設定。如果您不在 %d 秒內回應，系統會回復到先前的設定。"
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] "測試新設定。如果您不在 %d 秒內回應，系統會回復到先前的設定。"
+msgstr[1] "測試新設定。如果您不在 %d 秒內回應，系統會回復到先前的設定。"
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
@@ -66,4 +70,3 @@ msgstr "視窗移動時會搖搖晃晃 (_W)"
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
 msgstr "工作區位於方形體上 (_u)"
-

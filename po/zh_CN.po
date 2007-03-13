@@ -25,11 +25,15 @@ msgstr ""
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 #: ../desktop-effects.c:140
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Testing the new settings. If you don't respond in %d second the previous "
 "settings will be restored."
-msgstr "测试新设置。如果你在 %d 秒之内没有响应，之前的设置将恢复。"
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] "测试新设置。如果你在 %d 秒之内没有响应，之前的设置将恢复。"
+msgstr[1] "测试新设置。如果你在 %d 秒之内没有响应，之前的设置将恢复。"
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
@@ -70,4 +74,3 @@ msgstr "移动时窗口摇晃 (_W)"
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
 msgstr "立方体上的工作区 (_u)"
-
