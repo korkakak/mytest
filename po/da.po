@@ -1,0 +1,73 @@
+# translation of da.po to
+# Copyright (C) 2006, Red Hat, Inc.
+# This file is distributed under the same license as the desktop-effects package.
+# Kjartan Maraas <kmaraas@gnome.org>, 2006.
+# Keld Simonsen <keld@rap.dk>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: da\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-19 23:46+0100\n"
+"PO-Revision-Date: 2007-04-15 12:31+0200\n"
+"Last-Translator: Keld Simonsen <keld@rap.dk>\n"
+"Language-Team:  <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.2\n"
+
+# Remove this line or KBabel regards it as an invalid header
+# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+#: ../desktop-effects.c:153
+#, c-format
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] "Tester de nye indstillinger. Hvis du ikke svarer inden %d sekund vil tidligere indstillinger gendannes."
+msgstr[1] "Tester de nye indstillinger. Hvis du ikke svarer inden %d sekunder vil tidligere indstillinger gendannes."
+
+#: ../desktop-effects.c:197
+msgid "Keep Settings"
+msgstr "Behold indstillingerne"
+
+#: ../desktop-effects.c:203
+msgid "Do you want to keep these settings?"
+msgstr "Vil du beholde disse indstillinger?"
+
+#: ../desktop-effects.c:225
+msgid "Use _previous settings"
+msgstr "Brug _tidligere indstillinger"
+
+#: ../desktop-effects.c:226
+msgid "_Keep settings"
+msgstr "_Behold indstillingerne"
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+msgid "Desktop Effects"
+msgstr "Skrivebordseffekter"
+
+#: ../desktop-effects.desktop.in.h:2
+msgid "Select desktop effects"
+msgstr "Vælg skrivebordseffekter"
+
+#: ../desktop-effects.glade.h:1
+msgid "<b>Desktop Effects</b>"
+msgstr "<b>Skrivebordseffekter</b>"
+
+#: ../desktop-effects.glade.h:3
+msgid "Enable Desktop _Effects"
+msgstr "Aktivér skrivebords_effekter"
+
+#: ../desktop-effects.glade.h:4
+msgid "Windows _Wobble when Moved"
+msgstr "Vinduer _ryster når de flyttes"
+
+#: ../desktop-effects.glade.h:5
+msgid "Workspaces on a C_ube"
+msgstr "Arbejdsområder på en k_ube"
+
