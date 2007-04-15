@@ -17,14 +17,14 @@
 #   http://www.softcatala.org/projectes/fedora/
 #   i contacteu l'anterior traductor/a.
 #
-# Xavier Conde Rueda <xavi.conde@gmail.com>, 2006
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2006, 2007
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-12-09 20:32+0100\n"
+"PO-Revision-Date: 2007-04-15 20:32+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +65,7 @@ msgstr "_Conserva la configuració"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
-msgstr "Efectes de l'escriptori"
+msgstr "Efectes d'escriptori"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
@@ -73,7 +73,7 @@ msgstr "Seleccioneu els efectes d'escriptori"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr "<b>Efectes d'escriptori</b>:"
+msgstr "<b>Efectes d'escriptori</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
@@ -85,4 +85,4 @@ msgstr "_Sacseja les finestres en moure-les"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr "Espais de treball en un c_ub:"
+msgstr "Espais de treball en un c_ub"
