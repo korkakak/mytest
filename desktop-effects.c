@@ -246,6 +246,8 @@ run_timed_dialog (App *app)
 static gboolean
 start_compiz (App *app, GError **err)
 {
+    setenv ("LIBGL_ALWAYS_INDIRECT", "1", 1);
+
     if (!g_spawn_command_line_async ("gtk-window-decorator", err))
 	return FALSE;
     
