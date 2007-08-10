@@ -251,7 +251,7 @@ start_compiz (App *app, GError **err)
     if (!g_spawn_command_line_async ("gtk-window-decorator", err))
 	return FALSE;
     
-    if (!g_spawn_command_line_async ("compiz --replace gconf", err))
+    if (!g_spawn_command_line_async ("compiz --replace glib gconf", err))
 	return FALSE;
     
     app->compiz_running = TRUE;
