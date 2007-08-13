@@ -460,7 +460,7 @@ show_dialog_timeout (gpointer data)
 		(GtkWindow *)info->app->dialog,
 		GTK_DIALOG_DESTROY_WITH_PARENT,
 		GTK_MESSAGE_WARNING,
-		GTK_BUTTONS_OK, "Desktop effects could not be be enabled");
+		GTK_BUTTONS_OK, "Desktop effects could not be enabled");
 	    
 	    gtk_window_set_title (GTK_WINDOW (dialog), "");
 	    gtk_dialog_run (GTK_DIALOG (dialog));
