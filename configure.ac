@@ -21,7 +21,7 @@ dnl
 dnl Process this file with autoconf to create configure.
 
 AC_PREREQ([2.57])
-AC_INIT(desktop-effects,[0.7.4])
+AC_INIT(desktop-effects,[0.7.17])
 AM_INIT_AUTOMAKE([dist-bzip2])
 AM_MAINTAINER_MODE
 
@@ -35,7 +35,7 @@ GETTEXT_PACKAGE=desktop-effects
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Name of default gettext domain])
 
-ALL_LINGUAS="as bn_IN ca de el es fr gu hi hr it ja kn ko ml mr nb or pa pl pt_BR ru si sr@Latn sr ta te ur zh_CN zh_TW"
+ALL_LINGUAS="as bg bn_IN bs ca cs da de el es fi fr gu hi hr hu id is it ja ka kn ko mk ml mr ms nb nl or pa pl pt_BR pt ro ru si sk sl sr@Latn sr sv ta te uk ur zh_CN zh_TW"
 AM_GLIB_GNU_GETTEXT
 
 desktopeffectslocaledir='${prefix}/${DATADIRNAME}/locale'
