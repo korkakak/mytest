@@ -32,7 +32,7 @@
 #include <glib/gi18n.h>
 
 #define PLUGIN_LIST_KEY		"/apps/compiz/general/allscreens/options/active_plugins"
-#define WINDOW_MANAGER_KEY	"/apps/gnome-session/rh/window_manager"
+#define WINDOW_MANAGER_KEY	"/desktop/gnome/session/required_components/windowmanager"
 
 typedef struct App App;
 
@@ -91,7 +91,7 @@ current_configured_wm (App *app,
 	return METACITY;
     }
     
-    if (str && strcmp (str, "compiz") == 0)
+    if (str && strcmp (str, "compiz-gtk") == 0)
     {
 	return COMPIZ;
     }
@@ -246,12 +246,7 @@ run_timed_dialog (App *app)
 static gboolean
 start_compiz (App *app, GError **err)
 {
-    setenv ("LIBGL_ALWAYS_INDIRECT", "1", 1);
-
-    if (!g_spawn_command_line_async ("gtk-window-decorator", err))
-	return FALSE;
-    
-    if (!g_spawn_command_line_async ("compiz --replace glib gconf", err))
+    if (!g_spawn_command_line_async ("compiz-gtk --replace", err))
 	return FALSE;
     
     app->compiz_running = TRUE;
@@ -285,7 +280,7 @@ get_widget_settings (App *app,
 static void
 apply_settings (App *app, Settings *settings)
 {
-    const char *str = settings->enabled? "compiz" : "metacity";
+    const char *str = settings->enabled? "compiz-gtk" : "metacity";
     char *session_file;
     
     gconf_client_set_string (app->gconf,
