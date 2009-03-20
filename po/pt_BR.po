@@ -1,62 +1,57 @@
-# Brazilian Portuguese translations for desktop-effects package.
-# Copyright (C) 2006 THE pt_BR'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the pt_BR package.
+# Brazilian Portuguese translation of desktop-effects.
+# This file is distributed under the same license as the desktop-effects package.
 # Automatically generated, 2006.
-# Igor Pires Soares <igor@projetofedora.org>, 2006.
+# Igor Pires Soares <igor@projetofedora.org>, 2006,2008.
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pt_BR\n"
+"Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-29 22:09-0200\n"
+"POT-Creation-Date: 2008-10-17 01:17+0000\n"
+"PO-Revision-Date: 2008-10-19 18:21-0300\n"
 "Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-#: ../desktop-effects.c:140
-msgid ""
-"Testing the new settings. If you don't respond in %d second the previous "
-"settings will be restored."
-msgid_plural ""
-"Testing the new settings. If you don't respond in %d seconds the previous "
-"settings will be restored."
-msgstr[0] ""
-"Testando as novas configurações. Se você não responder em %d segundo as "
-"configurações anteriores serão restauradas."
-msgstr[1] ""
-"Testando as novas configurações. Se você não responder em %d segundos as "
-"configurações anteriores serão restauradas."
+#: ../desktop-effects.c:153
+#, c-format
+msgid "Testing the new settings. If you don't respond in %d second the previous settings will be restored."
+msgid_plural "Testing the new settings. If you don't respond in %d seconds the previous settings will be restored."
+msgstr[0] "Testando as novas configurações. Se você não responder em %d segundo as configurações anteriores serão restauradas."
+msgstr[1] "Testando as novas configurações. Se você não responder em %d segundos as configurações anteriores serão restauradas."
 
-#: ../desktop-effects.c:184
+#: ../desktop-effects.c:197
 msgid "Keep Settings"
-msgstr "Manter Configurações"
+msgstr "Manter configurações"
 
-#: ../desktop-effects.c:190
+#: ../desktop-effects.c:203
 msgid "Do you want to keep these settings?"
-msgstr "Você deseja manter estas configurações?"
+msgstr "Você deseja manter essas configurações?"
 
-#: ../desktop-effects.c:212
+#: ../desktop-effects.c:225
 msgid "Use _previous settings"
 msgstr "Usar as configurações _anteriores"
 
-#: ../desktop-effects.c:213
+#: ../desktop-effects.c:226
 msgid "_Keep settings"
 msgstr "_Manter configurações"
 
-#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+#: ../desktop-effects.desktop.in.h:1
+#: ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
 msgstr "Efeitos da Área de Trabalho"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr "Selecionar efeitos da área de trabalho"
+msgstr "Selecione efeitos da área de trabalho"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
@@ -64,12 +59,13 @@ msgstr "<b>Efeitos da Área de Trabalho</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr "Habilitar _Efeitos da Área de Trabalho"
+msgstr "Habilitar _efeitos da área de trabalho"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr "_Sacudir Janelas ao Mover"
+msgstr "_Sacudir janelas ao mover"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr "Áreas de Trabalho em _Cubo"
+msgstr "Áreas de trabalho em _cubo"
+
