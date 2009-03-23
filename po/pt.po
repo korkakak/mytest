@@ -3,45 +3,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2007-01-12 20:53+0000\n"
-"Last-Translator: Pedro Mondim <pmondim@gmail.com>\n"
+"POT-Creation-Date: 2009-03-03 01:29+0000\n"
+"PO-Revision-Date: 2009-03-11 14:22+0100\n"
+"Last-Translator: Sérgio Mesquita <sergiomesquita@cm-porto.pt>\n"
 "Language-Team: Portuguese <fedora-trans-pt@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../desktop-effects.c:140
+#: ../desktop-effects.c:153
 #, c-format
-msgid ""
-"Testing the new settings. If you don't respond in %d second the previous "
-"settings will be restored."
-"Testing the new settings. If you don't respond in %d seconds the previous "
-"settings will be restored."
-msgstr ""
-"A testar as novas definições. Se não responder em %d segundos serão restauradas as "
-"definições anteriores."
-"A testar as novas definições. Se não responder em %d segundos serão restauradas as "
-"definições anteriores."
+msgid "Testing the new settings. If you don't respond in %d second the previous settings will be restored."
+msgid_plural "Testing the new settings. If you don't respond in %d seconds the previous settings will be restored."
+msgstr[0] "A testar as novas definições. Se não responder em %d segundo serão restauradas as definições anteriores."
+msgstr[1] "A testar as novas definições. Se não responder em %d segundos serão restauradas as definições anteriores."
 
-#: ../desktop-effects.c:184
+#: ../desktop-effects.c:197
 msgid "Keep Settings"
 msgstr "Manter Definições"
 
-#: ../desktop-effects.c:190
+#: ../desktop-effects.c:203
 msgid "Do you want to keep these settings?"
 msgstr "Deseja manter estas definições?"
 
-#: ../desktop-effects.c:212
+#: ../desktop-effects.c:225
 msgid "Use _previous settings"
 msgstr "Usar as definições _anteriores"
 
-#: ../desktop-effects.c:213
+#: ../desktop-effects.c:226
 msgid "_Keep settings"
 msgstr "_Manter definições"
 
-#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+#: ../desktop-effects.desktop.in.h:1
+#: ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
 msgstr "Efeitos da Área de Trabalho"
 
