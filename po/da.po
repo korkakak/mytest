@@ -1,25 +1,21 @@
-# translation of da.po to
-# Copyright (C) 2006, Red Hat, Inc.
+# Danish translation of desktop-effects.
+# Copyright (C) 2009
 # This file is distributed under the same license as the desktop-effects package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2006.
-# Keld Simonsen <keld@rap.dk>, 2007.
+# Kris Thomsen <lakristho@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: da\n"
+"Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-19 23:46+0100\n"
-"PO-Revision-Date: 2007-04-15 12:31+0200\n"
-"Last-Translator: Keld Simonsen <keld@rap.dk>\n"
-"Language-Team:  <da@li.org>\n"
+"POT-Creation-Date: 2009-02-15 13:15+0000\n"
+"PO-Revision-Date: 2009-03-23 07:00+0100\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# Remove this line or KBabel regards it as an invalid header
-# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 #: ../desktop-effects.c:153
 #, c-format
 msgid ""
@@ -28,16 +24,20 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] "Tester de nye indstillinger. Hvis du ikke svarer inden %d sekund vil tidligere indstillinger gendannes."
-msgstr[1] "Tester de nye indstillinger. Hvis du ikke svarer inden %d sekunder vil tidligere indstillinger gendannes."
+msgstr[0] "" 
+"Afprøver nye indstillinger. Hvis du ikke svarer indenfor %d sekund vil tidligere "
+"indstillinger blive gendannet"
+msgstr[1] "" 
+"Afprøver nye indstillinger. Hvis du ikke svarer indenfor %d sekunder vil tidligere "
+"indstillinger blive gendannet"
 
 #: ../desktop-effects.c:197
 msgid "Keep Settings"
-msgstr "Behold indstillingerne"
+msgstr "Behold indstillinger"
 
 #: ../desktop-effects.c:203
 msgid "Do you want to keep these settings?"
-msgstr "Vil du beholde disse indstillinger?"
+msgstr "Ønsker du at beholde disse indstillinger?"
 
 #: ../desktop-effects.c:225
 msgid "Use _previous settings"
@@ -45,7 +45,7 @@ msgstr "Brug _tidligere indstillinger"
 
 #: ../desktop-effects.c:226
 msgid "_Keep settings"
-msgstr "_Behold indstillingerne"
+msgstr "Behold _indstillinger"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
@@ -65,9 +65,8 @@ msgstr "Aktivér skrivebords_effekter"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr "Vinduer _ryster når de flyttes"
+msgstr "Vinduer _blævrer når de bliver flyttet"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr "Arbejdsområder på en k_ube"
-
+msgstr "Vis arbejdsområder på en _kube"
