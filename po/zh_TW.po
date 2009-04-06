@@ -1,35 +1,41 @@
-# translation of zh_TW.po to Chinese (Traditional)
+# translation of desktop-effects.master.po to
 # translation of zh_TW.po to
 # Twi translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
+#
+#
 # Automatically generated, 2006.
 # Chester Cheng <ccheng@brisbane.redhat.com>, 2006.
 # Chester Cheng <ccheng@redhat.com>, 2006.
+# Terry Chuang <tchuang@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: zh_TW\n"
+"Project-Id-Version: desktop-effects.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2006-11-30 00:32+1000\n"
-"Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"PO-Revision-Date: 2009-04-06 12:38+1000\n"
+"Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
+"Language-Team:  <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
+# Remove this line or KBabel regards it as an invalid header
+# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 #: ../desktop-effects.c:140
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Testing the new settings. If you don't respond in %d second the previous "
 "settings will be restored."
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] "測試新設定。如果您不在 %d 秒內回應，系統會回復到先前的設定。"
-msgstr[1] "測試新設定。如果您不在 %d 秒內回應，系統會回復到先前的設定。"
+msgstr[0] "測試新設定。若您不在 %d 秒內回應，系統將會回復到先前的設定。"
+msgstr[1] "測試新設定。若您不在 %d 秒內回應，系統將會回復到先前的設定。"
 
 #: ../desktop-effects.c:184
 msgid "Keep Settings"
@@ -41,11 +47,11 @@ msgstr "您是否要保留這些設定？"
 
 #: ../desktop-effects.c:212
 msgid "Use _previous settings"
-msgstr "使用先前的設定 (_p)"
+msgstr "使用先前的設定（_p）"
 
 #: ../desktop-effects.c:213
 msgid "_Keep settings"
-msgstr "保留設定 (_K)"
+msgstr "保留設定（_K）"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
@@ -61,12 +67,13 @@ msgstr "<b>桌面特效</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr "啟用桌面的特殊效果 (_E)"
+msgstr "啟用桌面的特殊效果（_E）"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
-msgstr "視窗移動時會搖搖晃晃 (_W)"
+msgstr "視窗移動時會搖搖晃晃（_W）"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr "工作區位於方形體上 (_u)"
+msgstr "工作區位於方形體上（_u）"
+
