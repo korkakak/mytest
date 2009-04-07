@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-29 08:58-0500\n"
-"PO-Revision-Date: 2009-03-27 16:05-0000\n"
-"Last-Translator: Sérgio Mesquita <sergiomesquita@cm-porto.pt>\n"
+"PO-Revision-Date: 2009-04-07 23:44+0100\n"
+"Last-Translator: Ricardo Pinto <ricardo.bigote@gmail.com>\n"
 "Language-Team: Portuguese <fedora-trans-pt@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,19 +38,19 @@ msgstr "_Manter definições"
 #: ../desktop-effects.desktop.in.h:1
 #: ../desktop-effects.glade.h:2
 msgid "Desktop Effects"
-msgstr "Efeitos da Área de Trabalho"
+msgstr "Efeitos do Ambiente de Trabalho"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr "Selecionar efeitos da área de trabalho"
+msgstr "Selecionar efeitos do Ambiente de trabalho"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr "<b>Efeitos da Área de Trabalho</b>"
+msgstr "<b>Efeitos do Ambiente de Trabalho</b>"
 
 #: ../desktop-effects.glade.h:3
 msgid "Enable Desktop _Effects"
-msgstr "Activar _Efeitos da Área de Trabalho"
+msgstr "Activar _Efeitos do Ambiente de Trabalho"
 
 #: ../desktop-effects.glade.h:4
 msgid "Windows _Wobble when Moved"
@@ -58,5 +58,5 @@ msgstr "Janelas são mostradas com _Ondulação quando movidas"
 
 #: ../desktop-effects.glade.h:5
 msgid "Workspaces on a C_ube"
-msgstr "Áreas de Trabalho num _Cubo"
+msgstr "Ambiente de Trabalho num _Cubo"
 
