@@ -1,0 +1,72 @@
+# translation of desktop-effects.master.desktop-effects.po to Maithili
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-effects.master.desktop-effects\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"PO-Revision-Date: 2009-04-07 23:32+0530\n"
+"Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
+"Language-Team: Maithili <maithili.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+
+# Remove this line or KBabel regards it as an invalid header
+# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+#: ../desktop-effects.c:140
+#, c-format
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] "नवीन जमावट जाँचि रहल अछि. जँ अहाँ %d सकेंडमे अनुक्रिया नहि दए छी तँ पछिला जमावट फिनु भंडारित कए देल जाएत."
+msgstr[1] "नवीन जमावट जाँचि रहल अछि. जँ अहाँ %d सकेंडमे अनुक्रिया नहि दए छी तँ पछिला जमावट फिनु भंडारित कए देल जाएत."
+
+#: ../desktop-effects.c:184
+msgid "Keep Settings"
+msgstr "जमावट बनैने राखू"
+
+#: ../desktop-effects.c:190
+msgid "Do you want to keep these settings?"
+msgstr "की अहाँ ई जमावटकेँ राखनाइ चाहैत छी?"
+
+#: ../desktop-effects.c:212
+msgid "Use _previous settings"
+msgstr "पछिला जमावटक प्रयोग करू (_p)"
+
+#: ../desktop-effects.c:213
+msgid "_Keep settings"
+msgstr "जमावट बनैने राखू (_K)"
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+msgid "Desktop Effects"
+msgstr "डेस्कटाप प्रभाव"
+
+#: ../desktop-effects.desktop.in.h:2
+msgid "Select desktop effects"
+msgstr "डेस्कटाप प्रभाव चुनू"
+
+#: ../desktop-effects.glade.h:1
+msgid "<b>Desktop Effects</b>"
+msgstr "<b>डेस्कटाप प्रभाव</b>"
+
+#: ../desktop-effects.glade.h:3
+msgid "Enable Desktop _Effects"
+msgstr "डेस्कटाप प्रभाव सक्रिय करू (_E)"
+
+#: ../desktop-effects.glade.h:4
+msgid "Windows _Wobble when Moved"
+msgstr "विंडो स्थानांतरण जखन घसकाओल गेल (_W)"
+
+#: ../desktop-effects.glade.h:5
+msgid "Workspaces on a C_ube"
+msgstr "चौकोरमे वर्कस्पेस (_u)"
+
