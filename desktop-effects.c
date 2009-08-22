@@ -588,7 +588,7 @@ update_plugins (App     *app,
       if (strcmp (name, "cube") == 0 ||
 	  strcmp (name, "rotate") == 0 ||
 	  strcmp (name, "zoom") == 0 ||
-	  strcmp (name, "plane") == 0 ||
+	  strcmp (name, "wall") == 0 ||
 	  strcmp (name, "wobbly") == 0)
 	continue;
 
@@ -608,7 +608,7 @@ update_plugins (App     *app,
 	  new_setting = g_slist_prepend (new_setting, "zoom");
 	}
 	else
-	  new_setting = g_slist_prepend (new_setting, "plane");
+	  new_setting = g_slist_prepend (new_setting, "wall");
       }
 
     }
