@@ -31,6 +31,34 @@ AC_PROG_CC
 AC_PROG_INSTALL
 AC_PROG_INTLTOOL([0.35])
 
+# Stay command-line compatible with the gnome-common configure option. Here
+# minimum/yes/maximum are the same, however.
+AC_ARG_ENABLE(compile_warnings,
+  AC_HELP_STRING([--enable-compile-warnings=@<:@no/minimum/yes/maximum/error@:>@],
+                 [Turn on compiler warnings]),,
+  enable_compile_warnings=error)
+
+changequote(,)dnl
+if test "$enable_compile_warnings" != no ; then
+  if test "x$GCC" = "xyes"; then
+    case " $CFLAGS " in
+    *[\ \	]-Wall[\ \	]*) ;;
+    *) CFLAGS="$CFLAGS -Wall" ;;
+    esac
+    case " $CFLAGS " in
+    *[\ \	]-Wmissing-prototypes[\ \	]*) ;;
+    *) CFLAGS="$CFLAGS -Wmissing-prototypes" ;;
+    esac
+    if test "$enable_compile_warnings" = error ; then
+      case " $CFLAGS " in
+      *[\ \	]-Werror[\ \	]*) ;;
+      *) CFLAGS="$CFLAGS -Werror" ;;
+      esac
+    fi
+  fi
+fi
+changequote([,])dnl
+
 GETTEXT_PACKAGE=desktop-effects
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Name of default gettext domain])

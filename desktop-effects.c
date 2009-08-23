@@ -1,3 +1,4 @@
+/* -*- mode: C; c-file-style: "stroustrup"; indent-tabs-mode: nil; -*- */
 /*
     Desktop Effects. A preference panel for compiz.
     Copyright (C) 2006   Red Hat, Inc.
@@ -28,8 +29,10 @@
 #include <string.h>
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
+#include <X11/extensions/Xcomposite.h>
 #include <gdk/gdkx.h>
 #include <glib/gi18n.h>
+#include <glib/gstdio.h>
 
 #define PLUGIN_LIST_KEY		"/apps/compiz/general/allscreens/options/active_plugins"
 #define WINDOW_MANAGER_KEY	"/desktop/gnome/session/required_components/windowmanager"
@@ -387,13 +390,13 @@ get_current_window_manager (void)
 	return NULL;
     }
     
-    if (!g_utf8_validate (val, nitems, NULL))
+    if (!g_utf8_validate ((char *)val, nitems, NULL))
     {
 	XFree (val);
 	return NULL;
     }
     
-    retval = g_strndup (val, nitems);
+    retval = g_strndup ((char *)val, nitems);
     
     XFree (val);
     
@@ -752,7 +755,6 @@ main (int argc, char **argv)
 {
     App *app;
     GError *err = NULL;
-    gint result;
     
     bindtextdomain (GETTEXT_PACKAGE, DESKTOPEFFECTSLOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
