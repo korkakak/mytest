@@ -1,7 +1,7 @@
 /* -*- mode: C; c-file-style: "stroustrup"; indent-tabs-mode: nil; -*- */
 /*
-    Desktop Effects. A preference panel for compiz.
-    Copyright (C) 2006   Red Hat, Inc.
+    Desktop Effects. A preference panel for GNOME window management and effects
+    Copyright (C) 2006-2009   Red Hat, Inc.
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -891,8 +891,7 @@ static gboolean
 init_app (App *app,
 	  GError **err)
 {
-    //#define GLADE_FILE DATADIR "desktop-effects.glade"
-#define GLADE_FILE "./desktop-effects.glade"
+#define GLADE_FILE DATADIR "/desktop-effects.glade"
     GladeXML *xml;
     
     app->gconf = gconf_client_get_default ();

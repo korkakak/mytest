@@ -23,13 +23,13 @@ SUBDIRS = po
 
 bin_PROGRAMS = desktop-effects
 
-desktop_effects_CFLAGS = $(DEP_CFLAGS) -DDATADIR=\"$(datadir)/compiz/\" -I$(top_srcdir) -DDESKTOPEFFECTSLOCALEDIR=\""$(desktopeffectslocaledir)"\"
+desktop_effects_CFLAGS = $(DEP_CFLAGS) -DDATADIR=\"$(pkgdatadir)\" -I$(top_srcdir) -DDESKTOPEFFECTSLOCALEDIR=\""$(desktopeffectslocaledir)"\"
 desktop_effects_LDADD = $(DEP_LIBS)
 
 desktop_effects_SOURCES =	\
         desktop-effects.c
 
-desktop_effectsdir = $(datadir)/compiz
+desktop_effectsdir = $(pkgdatadir)
 desktop_effects_DATA = desktop-effects.glade
 
 desktopdir = $(datadir)/applications
