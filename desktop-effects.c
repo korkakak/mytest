@@ -993,6 +993,7 @@ main (int argc, char **argv)
 
     if (!compiz_installed () && !gnome_shell_installed ())
     {
+        /* compiz-gnome and gnome-shell are package names and should not be translated */
 	show_alert (_("Only the standard GNOME desktop is available. Please install compiz-gnome or gnome-shell."));
 	return 0;
     }
