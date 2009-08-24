@@ -528,7 +528,6 @@ start_wm_timeout (gpointer data)
     gtk_window_present (GTK_WINDOW (info->app->dialog));
 
     started = get_current_window_manager() == info->app->pending.window_manager;
-    started = FALSE;
 
     if (!started &&
         g_timer_elapsed (info->timer, NULL) <= SECONDS_WE_WILL_WAIT_FOR_WM_TO_START)
