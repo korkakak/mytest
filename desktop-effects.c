@@ -42,37 +42,56 @@ typedef struct App App;
 typedef enum
 {
     COMPIZ,
-    METACITY
+    METACITY,
+    GNOME_SHELL,
+    UNKNOWN
 } WindowManager;
 
 typedef struct
 {
-    gboolean	enabled;
-    gboolean	cube;
-    gboolean	wobbly;
+    WindowManager window_manager;
+    gboolean	  cube;
+    gboolean	  wobbly;
 } Settings;
 
 struct App
 {
     GtkWidget	       *dialog;
-    GtkToggleButton    *enable;
+    GtkRadioButton     *standard;
+    GtkRadioButton     *compiz;
+    GtkRadioButton     *gnome_shell;
     GtkToggleButton    *wobbly;
     GtkToggleButton    *cube;
-    WindowManager	currently_running;
-    
-    gboolean		enabled_at_startup;
-    
-    Settings		initial;
+
+    /* The basic idea of the code is that we do changes as a transaction.
+     * If the user changes some widget, we update "pending" to be the
+     * settings corresponding to the new widget state, and then start
+     * the process of trying to apply the new settings. If applying
+     * succeeds, we "commit" the changes by setting "current" to
+     * "pending" and saving the changes to GConf. If applying fails
+     * we "roll back" by settings"pending" back to "current" and
+     * restore the widgets to their old state.
+     *
+     * In practice, we only roughly correspond to the model; partly
+     * for simplicity, and partly to deal with specific complications
+     * like the possibility of the roll-back procedure failing.
+     */
+    Settings		current;
+    Settings		pending;
     
     GConfClient	       *gconf;
-    
-    gboolean		compiz_running;
 };
 
+static void set_widgets (App            *app,
+                         const Settings *settings);
+static gboolean update_window_manager (App     *app,
+                                       int      roll_back_count,
+                                       GError **err);
+
 static void
-update_app (App *app)
+update_sensitive (App *app)
 {
-    gboolean sensitive = gtk_toggle_button_get_active (app->enable);
+    gboolean sensitive = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (app->compiz));
     
     gtk_widget_set_sensitive (GTK_WIDGET (app->wobbly), sensitive);
     gtk_widget_set_sensitive (GTK_WIDGET (app->cube), sensitive);
@@ -97,6 +116,10 @@ current_configured_wm (App *app,
     if (str && strcmp (str, "compiz-gtk") == 0)
     {
 	return COMPIZ;
+    }
+    else if (str && strcmp (str, "gnome-shell") == 0)
+    {
+        return GNOME_SHELL;
     }
     else
     {
@@ -251,9 +274,7 @@ start_compiz (App *app, GError **err)
 {
     if (!g_spawn_command_line_async ("compiz-gtk --replace", err))
 	return FALSE;
-    
-    app->compiz_running = TRUE;
-    
+
     return TRUE;
 }
 
@@ -262,9 +283,25 @@ start_metacity (App *app, GError **err)
 {
     if (!g_spawn_command_line_async ("metacity --replace", err))
 	return FALSE;
-    
-    app->compiz_running = FALSE;
-    
+
+    return TRUE;
+}
+
+static gboolean
+start_gnome_shell (App *app, GError **err)
+{
+    if (!g_spawn_command_line_async ("gnome-shell --replace", err))
+	return FALSE;
+
+    return TRUE;
+}
+
+static gboolean
+start_gnome_panel (App *app, GError **err)
+{
+    if (!g_spawn_command_line_async ("gnome-panel", err))
+	return FALSE;
+
     return TRUE;
 }
 
@@ -274,18 +311,42 @@ get_widget_settings (App *app,
 {
     if (!settings)
 	return;
-    
-    settings->enabled = gtk_toggle_button_get_active (app->enable);
+
+    if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (app->standard)))
+        settings->window_manager = METACITY;
+    else if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (app->compiz)))
+        settings->window_manager = COMPIZ;
+    else
+        settings->window_manager = GNOME_SHELL;
     settings->cube = gtk_toggle_button_get_active (app->cube);
     settings->wobbly = gtk_toggle_button_get_active (app->wobbly);
 }
 
 static void
-apply_settings (App *app, Settings *settings)
+commit_window_manager_change (App *app)
 {
-    const char *str = settings->enabled? "compiz-gtk" : "metacity";
+    const char *str = NULL;
     char *session_file;
-    
+
+    app->current = app->pending;
+
+    switch (app->current.window_manager)
+    {
+    case METACITY:
+        str = "metacity";
+        break;
+    case COMPIZ:
+        str = "compiz-gtk";
+        break;
+    case GNOME_SHELL:
+        str = "gnome-shell";
+        break;
+    case UNKNOWN:
+        g_assert_not_reached ();
+        break;
+    }
+    g_assert (str != NULL);
+
     gconf_client_set_string (app->gconf,
 			     WINDOW_MANAGER_KEY,
 			     str, NULL);
@@ -353,12 +414,12 @@ get_wm_window (void)
     return result;
 }
 
-static char*
+static WindowManager
 get_current_window_manager (void)
 {
     Atom utf8_string, atom, type;
     int result;
-    char *retval;
+    WindowManager retval;
     int format;
     gulong nitems;
     gulong bytes_after;
@@ -379,7 +440,7 @@ get_current_window_manager (void)
 				 &bytes_after, (guchar **)&val);
     
     if (gdk_error_trap_pop () || result != Success)
-	return NULL;
+	return UNKNOWN;
     
     if (type != utf8_string ||
 	format !=8 ||
@@ -387,150 +448,261 @@ get_current_window_manager (void)
     {
 	if (val)
 	    XFree (val);
-	return NULL;
+	return UNKNOWN;
     }
     
-    if (!g_utf8_validate ((char *)val, nitems, NULL))
-    {
-	XFree (val);
-	return NULL;
-    }
-    
-    retval = g_strndup ((char *)val, nitems);
-    
+    /* Retrieved property is always NULL terminated by Xlib */
+    if (strcmp ((char *)val, "Metacity") == 0)
+        retval = METACITY;
+    else if (strcmp ((char *)val, "compiz") == 0)
+        retval = COMPIZ;
+    else if (strcmp ((char *)val, "Mutter") == 0)
+        retval = GNOME_SHELL;
+    else
+        retval = UNKNOWN;
+
     XFree (val);
     
     return retval;
 }
 
-static gboolean
-compiz_started (void)
-{
-    gboolean result;
-    char *wm = get_current_window_manager ();
-    
-    result = wm && strcmp (wm, "compiz") == 0;
-    
-    g_free (wm);
-    
-    return result;
-}
-
-typedef struct TimedDialogInfo
+typedef struct StartWmInfo
 {
     App *app;
     GTimer *timer;
     Settings settings;
-} TimedDialogInfo;
+    int roll_back_count;
+} StartWmInfo;
 
-#define SECONDS_WE_WILL_WAIT_FOR_COMPIZ_TO_START 8
+#define SECONDS_WE_WILL_WAIT_FOR_WM_TO_START 8
+
+/* When a window manager fails to start at all, we show
+ * a dialog, but maybe the user can't see it */
+#define DIALOG_TIMEOUT_MILLISECONDS (10 * 1000)
+
+static void
+roll_back_change (App *app)
+{
+    app->pending = app->current;
+    set_widgets (app, &app->current);
+}
+
+/* next_wm is usually the old window manager, but could be something
+ * else for an emergency fallback */
+static void
+roll_back_to_window_manager (StartWmInfo  *info,
+                             WindowManager next_wm)
+{
+    WindowManager last_window_manager = info->app->pending.window_manager;
+
+    /* This just changes the widgets and settings, it assumes nothing
+     * has actually happened. Since we've already started the new
+     * window manager and it's (probably) replaced the old one, we
+     * need to restart the old one in addition.
+     */
+    info->app->current.window_manager = next_wm;
+    roll_back_change (info->app);
+
+    update_window_manager (info->app, info->roll_back_count + 1, NULL);
+
+    /* Preserve this so we know where we've already been */
+    info->app->current.window_manager = last_window_manager;
+}
 
 static gboolean
-show_dialog_timeout (gpointer data)
+time_out_dialog (gpointer data)
 {
-    TimedDialogInfo *info = data;
-    gboolean has_compiz;
+    GtkDialog *dialog = data;
+    gtk_dialog_response (dialog, GTK_RESPONSE_OK);
+
+    /* We'll remove the timeout unconditionally afterwards */
+    return TRUE;
+}
+
+static gboolean
+start_wm_timeout (gpointer data)
+{
+    StartWmInfo *info = data;
+    gboolean started;
     
     gtk_window_present (GTK_WINDOW (info->app->dialog));
-    
-    has_compiz = compiz_started();
-    
-    if (has_compiz || g_timer_elapsed (info->timer, NULL) > SECONDS_WE_WILL_WAIT_FOR_COMPIZ_TO_START)
+
+    started = get_current_window_manager() == info->app->pending.window_manager;
+    started = FALSE;
+
+    if (!started &&
+        g_timer_elapsed (info->timer, NULL) <= SECONDS_WE_WILL_WAIT_FOR_WM_TO_START)
+        return TRUE;
+
+    if (started)
     {
-	if (has_compiz)
-	{
-	    set_busy (info->app->dialog, FALSE);
-	
-	    if (run_timed_dialog (info->app))
-		apply_settings (info->app, &info->settings);
-	    else
-		gtk_toggle_button_set_active (info->app->enable, FALSE);
-	}
-	else
-	{
-	    GtkWidget *dialog;
+        /* Now that the old environment (which might own the panel D-Bus name)
+         * has exited, if we are running a new environment that need gnome-panel
+         * start it. If the panel is already running, this will just print a
+         * harmless message to standard out so, we don't try to guess if we
+         * need it or not ... better to be safe than sorry.
+         */
+        if (info->app->pending.window_manager != GNOME_SHELL)
+            start_gnome_panel (info->app, NULL);
 
-	    gtk_toggle_button_set_active (info->app->enable, FALSE);
+        set_busy (info->app->dialog, FALSE);
 
-	    set_busy (info->app->dialog, FALSE);
-	
-	    dialog = gtk_message_dialog_new (
-		(GtkWindow *)info->app->dialog,
-		GTK_DIALOG_DESTROY_WITH_PARENT,
-		GTK_MESSAGE_WARNING,
-		GTK_BUTTONS_OK, "Desktop effects could not be enabled");
-	    
-	    gtk_window_set_title (GTK_WINDOW (dialog), "");
-	    gtk_dialog_run (GTK_DIALOG (dialog));
-	    gtk_widget_destroy (dialog);
-	}
-	
-	gtk_widget_set_sensitive (info->app->dialog, TRUE);
-	
-	g_timer_destroy (info->timer);
-	g_free (info);
-	
-	return FALSE;
+        /* We've now gotten to the point where the window manager thinks it's
+         * running. If we are going to a new compositor, we show a countdown-dialog
+         * that the user has to click on to deal with the case where the
+         * compositor started but the display is messed up.
+         *
+         * If we are starting Metacity, or rolling back to the previous compositor
+         * we assume that when we've gotten to this point, we're OK. This isn't
+         * /always/ true, especially in the second case, but the confusion of
+         * asking the user to confirm that rolling back worked is considerable
+         * and not worth the extra safety.
+         */
+        if (info->app->pending.window_manager == METACITY ||
+            info->roll_back_count > 0 ||
+            run_timed_dialog (info->app))
+            commit_window_manager_change (info->app);
+        else {
+            roll_back_to_window_manager (info, info->app->current.window_manager);
+        }
     }
-    
+    else
+    {
+        GtkWidget *dialog;
+        const char *message = NULL;
+        GtkMessageType message_type = GTK_MESSAGE_WARNING;
+        WindowManager next_wm = info->app->current.window_manager;
+        guint dialog_timeout_id;
+
+        set_busy (info->app->dialog, FALSE);
+
+        if (info->roll_back_count > 1 ||
+            (info->roll_back_count == 1 &&
+             (info->app->current.window_manager == METACITY ||
+              info->app->pending.window_manager == METACITY)))
+        {
+            message = _("Could not restore old settings. Giving up.");
+            message_type = GTK_MESSAGE_ERROR;
+            next_wm = UNKNOWN; /* We're lost... */
+        }
+        else
+        {
+            if (info->roll_back_count == 1)
+            {
+                message = _("Could not restore old settings. Switching to standard GNOME Desktop.");
+                message_type = GTK_MESSAGE_ERROR;
+                next_wm = METACITY;
+            }
+            else
+            {
+                switch (info->app->pending.window_manager) {
+                case METACITY:
+                    message = _("Failed to start Metacity. Reverting to previous settings.");
+                    break;
+                case COMPIZ:
+                    message = _("Failed to start Compiz. Reverting to previous settings.");
+                    break;
+                case GNOME_SHELL:
+                    message = _("Failed to start GNOME Shell. Reverting to previous settings.");
+                    break;
+                case UNKNOWN:
+                    g_assert_not_reached ();
+                    break;
+                }
+            }
+        }
+	
+        dialog = gtk_message_dialog_new (
+            (GtkWindow *)info->app->dialog,
+            GTK_DIALOG_DESTROY_WITH_PARENT,
+            message_type,
+            GTK_BUTTONS_OK, message);
+
+        gtk_window_set_title (GTK_WINDOW (dialog), "");
+        dialog_timeout_id = g_timeout_add (DIALOG_TIMEOUT_MILLISECONDS, time_out_dialog, dialog);
+        gtk_dialog_run (GTK_DIALOG (dialog));
+        g_source_remove (dialog_timeout_id);
+        gtk_widget_destroy (dialog);
+
+        if (next_wm == UNKNOWN) {
+            /* Give the user a panel, if possible. As above, if the panel is already
+             * running, this is harmless */
+            start_gnome_panel (info->app, NULL);
+            commit_window_manager_change (info->app);
+        } else {
+            roll_back_to_window_manager (info, next_wm);
+        }
+    }
+	
+    gtk_widget_set_sensitive (info->app->dialog, TRUE);
+	
+    g_timer_destroy (info->timer);
+    g_free (info);
+	
+    return FALSE;
+}
+
+static gboolean
+update_window_manager (App     *app,
+                       gboolean roll_back_count,
+                       GError **err)
+{
+    StartWmInfo *info;
+
+    if (app->pending.window_manager == COMPIZ)
+    {
+        if (!start_compiz (app, err))
+            return FALSE;
+    }
+    else if (app->pending.window_manager == GNOME_SHELL)
+    {
+        if (!start_gnome_shell (app, err))
+            return FALSE;
+    }
+    else
+    {
+        if (!start_metacity (app, err))
+            return FALSE;
+    }
+
+    info = g_new0 (StartWmInfo, 1);
+
+    info->app = app;
+    info->timer = g_timer_new ();
+    info->roll_back_count = roll_back_count;
+
+    set_busy (app->dialog, TRUE);
+    gtk_widget_set_sensitive (app->dialog, FALSE);
+
+    g_timeout_add (250, start_wm_timeout, info);
+
     return TRUE;
 }
 
 static void
-on_enable_toggled (GtkWidget *widget,
-		   gpointer data)
+on_window_manager_toggled (GtkWidget *widget,
+                           App       *app)
 {
-    App *app = data;
     Settings settings;
-    
+
+    update_sensitive (app);
+
     get_widget_settings (app, &settings);
-    
-    if (settings.enabled != app->compiz_running)
+
+    if (app->pending.window_manager != settings.window_manager)
     {
-	GError *err = NULL;
-	
-	if (settings.enabled)
-	{
-	    start_compiz (app, &err);
-	}
-	else
-	{
-	    apply_settings (app, &settings);
-	    start_metacity (app, &err);
-	}
-	
-	if (err)
-	{
+        GError *err = NULL;
+
+        app->pending = settings;
+
+        if (!update_window_manager (app, 0, &err))
+        {
 	    show_error (err);
-	    
-	    g_signal_handlers_block_by_func (widget, on_enable_toggled, app);
-	    
-	    /* block the toggle signal */
-	    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget),
-					  !settings.enabled);
-	    
-	    g_signal_handlers_unblock_by_func (widget, on_enable_toggled, app);
-	}
-	else
-	{
-	    if (settings.enabled)
-	    {
-		TimedDialogInfo *info = g_new0 (TimedDialogInfo, 1);
-		
-		info->settings = settings;
-		info->app = app;
-		info->timer = g_timer_new ();
-		
-		set_busy (info->app->dialog, TRUE);
-		gtk_widget_set_sensitive (app->dialog, FALSE);
-		
-		g_timeout_add (250, show_dialog_timeout, info);
-	    }
-	}
+            roll_back_change (app);
+        }
     }
-    
-    update_app (app);
 }
+
 
 static GSList *
 get_plugins (App *app,
@@ -565,11 +737,8 @@ update_plugins (App     *app,
 {
     GError *tmp = NULL;
     GSList *plugins;
-    Settings settings;
     GSList *new_setting = NULL;
     GSList *old;
-    
-    get_widget_settings (app, &settings);
     
     plugins = get_plugins (app, &tmp);
     
@@ -599,12 +768,12 @@ update_plugins (App     *app,
 
       if (strcmp (name, "decoration") == 0)
       {
-	if (settings.wobbly)
+	if (app->pending.wobbly)
 	  new_setting = g_slist_prepend (new_setting, "wobbly");
       }
       else if (strcmp (name, "minimize") == 0)
       {
-	if (settings.cube)
+	if (app->pending.cube)
 	{
 	  new_setting = g_slist_prepend (new_setting, "cube");
 	  new_setting = g_slist_prepend (new_setting, "rotate");
@@ -625,7 +794,9 @@ update_plugins (App     *app,
 	g_propagate_error (err, tmp);
 	return FALSE;
     }
-    
+
+    app->current = app->pending;
+
     return TRUE;
 }
 
@@ -633,7 +804,18 @@ static void
 on_option_toggled (GtkWidget *widget,
 		   App       *app)
 {
-    update_plugins (app, NULL);
+    Settings settings;
+
+    get_widget_settings (app, &settings);
+
+    if (app->pending.cube != settings.cube ||
+        app->pending.wobbly != settings.wobbly)
+    {
+        app->pending = settings;
+
+        if (!update_plugins (app, NULL))
+            roll_back_change (app);
+    }
 }
 
 static gboolean
@@ -660,7 +842,7 @@ get_gconf_settings (App *app,
 	return FALSE;
     }
     
-    result.enabled = (wm == COMPIZ);
+    result.window_manager = wm;
     result.cube = contains_string (plugins, "cube");
     result.wobbly = contains_string (plugins, "wobbly");
     
@@ -670,19 +852,47 @@ get_gconf_settings (App *app,
 }
 
 static void
-set_widgets (App *app,
+set_widgets (App            *app,
 	     const Settings *settings)
 {
-    gtk_toggle_button_set_active (app->enable, settings->enabled);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (app->standard),
+                                  settings->window_manager == METACITY);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (app->compiz),
+                                  settings->window_manager == COMPIZ);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (app->gnome_shell),
+                                  settings->window_manager == GNOME_SHELL);
     gtk_toggle_button_set_active (app->cube, settings->cube);
     gtk_toggle_button_set_active (app->wobbly, settings->wobbly);
+}
+
+static gboolean
+is_in_path(const char *executable)
+{
+    char *location = g_find_program_in_path (executable);
+    gboolean in_path = location != NULL;
+    g_free (location);
+
+    return in_path;
+}
+
+static gboolean
+compiz_installed (void)
+{
+    return is_in_path ("compiz-gtk");
+}
+
+static gboolean
+gnome_shell_installed (void)
+{
+    return is_in_path ("gnome-shell");
 }
 
 static gboolean
 init_app (App *app,
 	  GError **err)
 {
-#define GLADE_FILE DATADIR "desktop-effects.glade"
+    //#define GLADE_FILE DATADIR "desktop-effects.glade"
+#define GLADE_FILE "./desktop-effects.glade"
     GladeXML *xml;
     
     app->gconf = gconf_client_get_default ();
@@ -696,32 +906,45 @@ init_app (App *app,
     }
     
     app->dialog = glade_xml_get_widget (xml, "dialog");
-    app->enable = GTK_TOGGLE_BUTTON (
-	glade_xml_get_widget (xml, "enable_togglebutton"));
+    app->standard = GTK_RADIO_BUTTON (
+	glade_xml_get_widget (xml, "standard_radiobutton"));
+    app->compiz = GTK_RADIO_BUTTON (
+	glade_xml_get_widget (xml, "compiz_radiobutton"));
+    app->gnome_shell = GTK_RADIO_BUTTON (
+	glade_xml_get_widget (xml, "gnome_shell_radiobutton"));
     app->cube   = GTK_TOGGLE_BUTTON (
 	glade_xml_get_widget (xml, "cube_checkbox"));
     app->wobbly = GTK_TOGGLE_BUTTON (
 	glade_xml_get_widget (xml, "wobble_checkbox"));
+
+    if (!compiz_installed ())
+        gtk_widget_hide (glade_xml_get_widget (xml, "compiz_box"));
+
+    if (!gnome_shell_installed ())
+        gtk_widget_hide (glade_xml_get_widget (xml, "gnome_shell_box"));
     
-    g_signal_connect (app->enable, "toggled",
-		      G_CALLBACK (on_enable_toggled), app);
+    g_signal_connect (app->standard, "toggled",
+		      G_CALLBACK (on_window_manager_toggled), app);
+    g_signal_connect (app->compiz, "toggled",
+		      G_CALLBACK (on_window_manager_toggled), app);
+    g_signal_connect (app->gnome_shell, "toggled",
+		      G_CALLBACK (on_window_manager_toggled), app);
     g_signal_connect (app->wobbly, "toggled",
 		      G_CALLBACK (on_option_toggled), app);
     g_signal_connect (app->cube, "toggled",
 		      G_CALLBACK (on_option_toggled), app);
     
-    if (!get_gconf_settings (app, &(app->initial), err))
-	return FALSE;
-    
-    /* We assume here that the user has not in the meantime started
-     * a *third* window manager. Ie., compiz is running initially
-     * if and only if "enabled" was true initially.
+    /* We assume here that at startup that the GConf settings are accurate
+     * and the user hasn't switched window managers by some other means.
      */
-    app->compiz_running = app->initial.enabled;
+    if (!get_gconf_settings (app, &(app->current), err))
+	return FALSE;
+
+    app->pending = app->current;
     
-    set_widgets (app, &(app->initial));
+    set_widgets (app, &(app->current));
     
-    update_app (app);
+    update_sensitive (app);
     
     return TRUE;
 }
@@ -764,7 +987,15 @@ main (int argc, char **argv)
     
     if (!has_composite())
     {
+        /* Intentionally not marked for translation, since it's exceedingly
+         * unlikely */
 	show_alert ("The Composite extension is not available");
+	return 0;
+    }
+
+    if (!compiz_installed () && !gnome_shell_installed ())
+    {
+	show_alert (_("Only the standard GNOME desktop is available. Please install compiz-gnome or gnome-shell."));
 	return 0;
     }
 
