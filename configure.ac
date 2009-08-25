@@ -63,7 +63,7 @@ GETTEXT_PACKAGE=desktop-effects
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Name of default gettext domain])
 
-ALL_LINGUAS="as bg bn_IN bs ca cs da de el es fi fr gu hi hr hu id is it ja ka kn ko mk ml mr ms nb nl or pa pl pt_BR pt ro ru si sk sl sr@Latn sr sv ta te uk ur zh_CN zh_TW"
+ALL_LINGUAS="as bg bn_IN bs ca cs da de el es fi fr gu hi hr hu id is it ja ka kn ko mk ml mr ms nb nl or pa pl pt_BR pt ro ru si sk sl sr@latin sr sv ta te uk ur zh_CN zh_TW"
 AM_GLIB_GNU_GETTEXT
 
 desktopeffectslocaledir='${prefix}/${DATADIRNAME}/locale'
