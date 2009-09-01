@@ -70,7 +70,7 @@ desktopeffectslocaledir='${prefix}/${DATADIRNAME}/locale'
 AC_SUBST(desktopeffectslocaledir)
 
 # Checks for pkg-config packages
-PKG_CHECK_MODULES(DEP, gconf-2.0 gtk+-2.0 libglade-2.0 xcomposite)
+PKG_CHECK_MODULES(DEP, gconf-2.0 gl gtk+-2.0 libglade-2.0 xcomposite)
 AC_SUBST(DEP_CFLAGS)
 AC_SUBST(DEP_LIBS)
 

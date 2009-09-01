@@ -33,6 +33,8 @@
 #include <gdk/gdkx.h>
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
+#include <GL/gl.h>
+#include <GL/glx.h>
 
 #define PLUGIN_LIST_KEY		"/apps/compiz/general/allscreens/options/active_plugins"
 #define WINDOW_MANAGER_KEY	"/desktop/gnome/session/required_components/windowmanager"
@@ -958,15 +960,83 @@ has_composite ()
     return FALSE;
 }
 
+static gboolean
+has_hardware_gl (void)
+{
+  GdkScreen *screen = gdk_screen_get_default();
+  Display *xdisplay = GDK_SCREEN_XDISPLAY (screen);
+  int xscreen = GDK_SCREEN_XNUMBER (screen);
+  char *renderer;
+  GLXContext context;
+  XVisualInfo *visual;
+  Window window = None;
+  XSetWindowAttributes cwa = { 0 };
+  gboolean success = FALSE;
+
+  int attrlist[] = {
+    GLX_RGBA,
+    GLX_RED_SIZE, 1,
+    GLX_GREEN_SIZE, 1,
+    GLX_BLUE_SIZE, 1,
+    GLX_DOUBLEBUFFER,
+    None
+  };
+
+  screen = gdk_screen_get_default ();
+  xdisplay = GDK_SCREEN_XDISPLAY (screen);
+  xscreen = GDK_SCREEN_XNUMBER (screen);
+
+  visual = glXChooseVisual (xdisplay, xscreen, attrlist);
+  if (!visual)
+      goto out;
+
+  context = glXCreateContext (xdisplay, visual, NULL, True);
+  if (!context)
+      goto out;
+
+  cwa.colormap = XCreateColormap(xdisplay, RootWindow (xdisplay, xscreen), visual->visual, False);
+  window = XCreateWindow(xdisplay,
+			 RootWindow (xdisplay, xscreen),
+			 0, 0, 1, 1, 0,
+			 visual->depth, InputOutput, visual->visual,
+			 CWColormap,
+			 &cwa);
+
+  if (!glXMakeCurrent(xdisplay, window, context))
+      goto out;
+
+  renderer = g_ascii_strdown ((const char *)glGetString(GL_RENDERER), -1);
+  /* The current Mesa software GL renderer string is "Software Rasterizer" */
+  success = strstr (renderer, "software rasterizer") == NULL;
+  g_free (renderer);
+
+ out:
+  glXMakeCurrent (xdisplay, None, None);
+  if (context)
+    glXDestroyContext (xdisplay, context);
+  if (window)
+    XDestroyWindow (xdisplay, window);
+  if (cwa.colormap)
+    XFreeColormap (xdisplay, cwa.colormap);
+
+  return success;
+}
+
 static void
-show_alert (const char *text)
+show_alert (const char *text,
+            const char *secondary_text)
 {
     GtkWidget *dialog;
     
-    dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
-				     GTK_MESSAGE_ERROR,
-				     GTK_BUTTONS_OK,
-				     text);
+    dialog = gtk_message_dialog_new_with_markup (NULL, GTK_DIALOG_MODAL,
+                                                 GTK_MESSAGE_ERROR,
+                                                 GTK_BUTTONS_OK,
+                                                 "<span weight='bold' size='larger'>%s</span>",
+                                                 text);
+    if (secondary_text)
+        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+                                                  "%s",
+                                                  secondary_text);
     
     gtk_dialog_run (GTK_DIALOG (dialog));
 }
@@ -987,14 +1057,22 @@ main (int argc, char **argv)
     {
         /* Intentionally not marked for translation, since it's exceedingly
          * unlikely */
-	show_alert ("The Composite extension is not available");
+	show_alert ("The Composite extension is not available", NULL);
+	return 0;
+    }
+
+    if (!has_hardware_gl())
+    {
+	show_alert (_("Accelerated 3D graphics is not available"),
+                    _("Desktop effects require hardware 3D support."));
 	return 0;
     }
 
     if (!compiz_installed () && !gnome_shell_installed ())
     {
         /* compiz-gnome and gnome-shell are package names and should not be translated */
-	show_alert (_("Only the standard GNOME desktop is available. Please install compiz-gnome or gnome-shell."));
+	show_alert (_("Only the standard GNOME desktop is available"),
+                    _("Please install compiz-gnome or gnome-shell."));
 	return 0;
     }
 
