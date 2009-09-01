@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"POT-Creation-Date: 2009-09-01 14:29-0400\n"
 "PO-Revision-Date: 2006-12-14 15:56+0530\n"
 "Last-Translator: Sree Ganesh <sthottem@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-#: ../desktop-effects.c:140
+#: ../desktop-effects.c:181
 #, c-format
 msgid ""
 "Testing the new settings. If you don't respond in %d second the previous "
@@ -29,26 +29,67 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] "కొత్త అమర్పులను పరిశీలిస్తోంది. మీరుకనుక %d సెకనులో ప్రతిస్పందించకపోతే ముందలి అమర్పులు తిరిగి స్టోరు చేయబడతాయి."
-msgstr[1] "కొత్త అమర్పులను పరిశీలిస్తోంది. మీరుకనుక %d సెకనుల్లో ప్రతిస్పందించకపోతే ముందలి అమర్పులు తిరిగి స్టోరు చేయబడతాయి."
+msgstr[0] ""
+"కొత్త అమర్పులను పరిశీలిస్తోంది. మీరుకనుక %d సెకనులో ప్రతిస్పందించకపోతే ముందలి అమర్పులు తిరిగి స్టోరు "
+"చేయబడతాయి."
+msgstr[1] ""
+"కొత్త అమర్పులను పరిశీలిస్తోంది. మీరుకనుక %d సెకనుల్లో ప్రతిస్పందించకపోతే ముందలి అమర్పులు తిరిగి స్టోరు "
+"చేయబడతాయి."
 
-#: ../desktop-effects.c:184
+#: ../desktop-effects.c:225
 msgid "Keep Settings"
 msgstr "అమర్పులను ఉంచు"
 
-#: ../desktop-effects.c:190
+#: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
 msgstr "మీరు ఈ అమర్పులను ఉంచాలనుకుంటున్నారా?"
 
-#: ../desktop-effects.c:212
+#: ../desktop-effects.c:253
 msgid "Use _previous settings"
 msgstr "ముందలి అమర్పులను ఉపయోగించు (_p)"
 
-#: ../desktop-effects.c:213
+#: ../desktop-effects.c:254
 msgid "_Keep settings"
 msgstr "అమర్పులను ఉంచు (_K)"
 
-#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:2
+#: ../desktop-effects.c:585
+msgid "Could not restore old settings. Giving up."
+msgstr ""
+
+#: ../desktop-effects.c:593
+msgid "Could not restore old settings. Switching to standard GNOME Desktop."
+msgstr ""
+
+#: ../desktop-effects.c:601
+msgid "Failed to start Metacity. Reverting to previous settings."
+msgstr ""
+
+#: ../desktop-effects.c:604
+msgid "Failed to start Compiz. Reverting to previous settings."
+msgstr ""
+
+#: ../desktop-effects.c:607
+msgid "Failed to start GNOME Shell. Reverting to previous settings."
+msgstr ""
+
+#: ../desktop-effects.c:1066
+msgid "Accelerated 3D graphics is not available"
+msgstr ""
+
+#: ../desktop-effects.c:1067
+msgid "Desktop effects require hardware 3D support."
+msgstr ""
+
+#. compiz-gnome and gnome-shell are package names and should not be translated
+#: ../desktop-effects.c:1074
+msgid "Only the standard GNOME desktop is available"
+msgstr ""
+
+#: ../desktop-effects.c:1075
+msgid "Please install compiz-gnome or gnome-shell."
+msgstr ""
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
 msgstr "డెస్కుటాప్ ప్రభావాలు"
 
@@ -60,15 +101,37 @@ msgstr "డెస్కుటాప్ ప్రభావాలను ఎన్�
 msgid "<b>Desktop Effects</b>"
 msgstr "<b>డెస్కుటాప్ ప్రభావాలు</b>"
 
+#: ../desktop-effects.glade.h:2
+msgid "<i>3D-accelerated visually-appealing desktop</i>"
+msgstr ""
+
 #: ../desktop-effects.glade.h:3
-msgid "Enable Desktop _Effects"
-msgstr "డెస్కుటాప్ ప్రభావాలను సాధ్యంచేయి (_E)"
+msgid "<i>Preview of GNOME 3.0 user interface</i>"
+msgstr ""
 
 #: ../desktop-effects.glade.h:4
+msgid "<i>Simple graphics, suitable for low-end machines</i>"
+msgstr ""
+
+#: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
 msgstr "కదిలేటప్పటి విండోస్ Wobble (_W)"
 
-#: ../desktop-effects.glade.h:5
+#: ../desktop-effects.glade.h:7
 msgid "Workspaces on a C_ube"
 msgstr "క్యూబులోని కార్య జాగా (_C)"
 
+#: ../desktop-effects.glade.h:8
+msgid "_Compiz"
+msgstr ""
+
+#: ../desktop-effects.glade.h:9
+msgid "_GNOME Shell"
+msgstr ""
+
+#: ../desktop-effects.glade.h:10
+msgid "_Standard"
+msgstr ""
+
+#~ msgid "Enable Desktop _Effects"
+#~ msgstr "డెస్కుటాప్ ప్రభావాలను సాధ్యంచేయి (_E)"

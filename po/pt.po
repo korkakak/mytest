@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-29 08:58-0500\n"
+"POT-Creation-Date: 2009-09-01 14:29-0400\n"
 "PO-Revision-Date: 2009-04-07 23:44+0100\n"
 "Last-Translator: Ricardo Pinto <ricardo.bigote@gmail.com>\n"
 "Language-Team: Portuguese <fedora-trans-pt@redhat.com>\n"
@@ -12,31 +12,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../desktop-effects.c:140
+#: ../desktop-effects.c:181
 #, c-format
-msgid "Testing the new settings. If you don't respond in %d second the previous settings will be restored."
-msgid_plural "Testing the new settings. If you don't respond in %d seconds the previous settings will be restored."
-msgstr[0] "A testar as novas definições. Se não responder em %d segundo serão restauradas as definições anteriores."
-msgstr[1] "A testar as novas definições. Se não responder em %d segundos serão restauradas as definições anteriores."
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] ""
+"A testar as novas definições. Se não responder em %d segundo serão "
+"restauradas as definições anteriores."
+msgstr[1] ""
+"A testar as novas definições. Se não responder em %d segundos serão "
+"restauradas as definições anteriores."
 
-#: ../desktop-effects.c:184
+#: ../desktop-effects.c:225
 msgid "Keep Settings"
 msgstr "Manter Definições"
 
-#: ../desktop-effects.c:190
+#: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
 msgstr "Deseja manter estas definições?"
 
-#: ../desktop-effects.c:212
+#: ../desktop-effects.c:253
 msgid "Use _previous settings"
 msgstr "Usar as definições _anteriores"
 
-#: ../desktop-effects.c:213
+#: ../desktop-effects.c:254
 msgid "_Keep settings"
 msgstr "_Manter definições"
 
-#: ../desktop-effects.desktop.in.h:1
-#: ../desktop-effects.glade.h:2
+#: ../desktop-effects.c:585
+msgid "Could not restore old settings. Giving up."
+msgstr ""
+
+#: ../desktop-effects.c:593
+msgid "Could not restore old settings. Switching to standard GNOME Desktop."
+msgstr ""
+
+#: ../desktop-effects.c:601
+msgid "Failed to start Metacity. Reverting to previous settings."
+msgstr ""
+
+#: ../desktop-effects.c:604
+msgid "Failed to start Compiz. Reverting to previous settings."
+msgstr ""
+
+#: ../desktop-effects.c:607
+msgid "Failed to start GNOME Shell. Reverting to previous settings."
+msgstr ""
+
+#: ../desktop-effects.c:1066
+msgid "Accelerated 3D graphics is not available"
+msgstr ""
+
+#: ../desktop-effects.c:1067
+msgid "Desktop effects require hardware 3D support."
+msgstr ""
+
+#. compiz-gnome and gnome-shell are package names and should not be translated
+#: ../desktop-effects.c:1074
+msgid "Only the standard GNOME desktop is available"
+msgstr ""
+
+#: ../desktop-effects.c:1075
+msgid "Please install compiz-gnome or gnome-shell."
+msgstr ""
+
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
 msgstr "Efeitos do Ambiente de Trabalho"
 
@@ -48,15 +92,37 @@ msgstr "Selecionar efeitos do Ambiente de trabalho"
 msgid "<b>Desktop Effects</b>"
 msgstr "<b>Efeitos do Ambiente de Trabalho</b>"
 
+#: ../desktop-effects.glade.h:2
+msgid "<i>3D-accelerated visually-appealing desktop</i>"
+msgstr ""
+
 #: ../desktop-effects.glade.h:3
-msgid "Enable Desktop _Effects"
-msgstr "Activar _Efeitos do Ambiente de Trabalho"
+msgid "<i>Preview of GNOME 3.0 user interface</i>"
+msgstr ""
 
 #: ../desktop-effects.glade.h:4
+msgid "<i>Simple graphics, suitable for low-end machines</i>"
+msgstr ""
+
+#: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
 msgstr "Janelas são mostradas com _Ondulação quando movidas"
 
-#: ../desktop-effects.glade.h:5
+#: ../desktop-effects.glade.h:7
 msgid "Workspaces on a C_ube"
 msgstr "Ambiente de Trabalho num _Cubo"
 
+#: ../desktop-effects.glade.h:8
+msgid "_Compiz"
+msgstr ""
+
+#: ../desktop-effects.glade.h:9
+msgid "_GNOME Shell"
+msgstr ""
+
+#: ../desktop-effects.glade.h:10
+msgid "_Standard"
+msgstr ""
+
+#~ msgid "Enable Desktop _Effects"
+#~ msgstr "Activar _Efeitos do Ambiente de Trabalho"
