@@ -8,15 +8,14 @@ msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-12-15 18:29-0500\n"
-"Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
-"Language-Team: Serbian (sr) <fedora@prevod.org>\n"
+"PO-Revision-Date: 2009-09-01 23:31+0100\n"
+"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 0.10.1\n"
 
 #: ../desktop-effects.c:181
 #, c-format
@@ -54,40 +53,42 @@ msgstr "Zadrži postav_ke"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "Ne mogu da vratim stare postavke. Odustajem."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
 msgstr ""
+"Ne mogu da vratim stare postavke. Prebacujem na uobičajeno Gnom radno "
+"okruženje."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Ne mogu da pokrenem Metacity. Vraćam na prethodne postavke."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Ne mogu da pokrenem Compiz. Vraćam na prethodne postavke."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "Ne mogu da pokrenem Gnom ljusku. Vraćam na prethodne postavke."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "Ubrzana 3D grafika nije dostupna"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "Efekti radnog okruženja zahtevaju 3D podršku."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "Dostupno je samo uobičajeno Gnome radno okruženje"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "Instalirajte compiz-gnome ili gnome-shell."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -103,15 +104,15 @@ msgstr "<b>Efekti radnog okruženja</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D ubrzano izgledom dopadljivo okruženje</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>Pregled Gnom 3.0 korisničkog sučelja</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>Jednostavna grafika, prikladno za slabije mašine</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -123,15 +124,12 @@ msgstr "Radne površi na _kocki"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "_Gnome ljuska"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
-
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "Uključi _efekte radnog okruženja"
+msgstr "Uo_bičajeno"
