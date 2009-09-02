@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-03-30 15:46+1000\n"
+"PO-Revision-Date: 2009-09-02 16:06+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -56,40 +56,40 @@ msgstr "保留设置 (_K)"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "无法恢复旧设置。放弃。"
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "无法恢复旧设置。切换到标准 GNIME 桌面。"
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "无法启动 Metacity。返回之前的设置。"
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "无法启动 Compiz。返回到之前的设置。"
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "无法启动 GNOME Sehll。返回到之前的设置。"
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "加速 3D 图形不可用"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "桌面效果需要硬件 3D 支持。"
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "只有标准 GNOME 桌面可用"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "请为 gnome-shell 安装 compiz-gnome。"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -105,15 +105,15 @@ msgstr "<b>桌面效果</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D 加速可视渲染桌面</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>预览 GNOME 3.0 用户界面</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>简单图形，适合低端机</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -125,15 +125,13 @@ msgstr "立方体上的工作区 (_u)"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "Compiz（_C）"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "GNOME Shell（_G）"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "标准（_S）"
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "启用桌面效果 (_E)"
