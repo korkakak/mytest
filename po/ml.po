@@ -1,4 +1,4 @@
-# translation of ml.po to Malayalam
+# translation of desktop-effects.master.ml.po to
 # Malayalam translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -7,16 +7,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ml\n"
+"Project-Id-Version: desktop-effects.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-12-04 16:23+0530\n"
-"Last-Translator: Ani Peter <apeter@redhat.com>\n"
-"Language-Team: Malayalam\n"
+"PO-Revision-Date: 2009-09-02 11:02+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 
@@ -55,40 +55,40 @@ msgstr "ക്രമികരണങ്ങള്‍ സൂക്ഷിക്ക�
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "പഴയ സജ്ജീകരണങ്ങളിലേക്ക് പോകുവാന്‍ സാധ്യമായില്ല. ഉപേക്ഷിക്കുന്നു."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "പഴയ സജ്ജീകരണങ്ങളിലേക്ക് പോകുവാന്‍ സാധ്യമായില്ല. സാധാരണ ഗ്നോം ഡസ്ക്ടോപ്പിലേക്ക് ലഭ്യമാക്കുന്നു."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Metacity ആരംഭിക്കുവാന്‍ സാധ്യമായില്ല. മുമ്പുള്ള സജ്ജീകരണങ്ങളിലേക്ക് തിരികെ പോകുന്നു."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Compiz ആരംഭിക്കുവാന്‍ സാധ്യമായില്ല. മുമ്പുള്ള സജ്ജീകരണങ്ങളിലേക്ക് തിരികെ പോകുന്നു."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "ഗ്നോ ഷെല്‍ ആരംഭിക്കുവാന്‍ സാധ്യമായില്ല. മുമ്പുള്ള സജ്ജീകരണങ്ങളിലേക്ക് തിരികെ പോകുന്നു."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "ആക്സിലറേറ്റഡ് 3D ഗ്രാഫിക്സ് ലഭ്യമല്ല"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "ഡസ്ക്ടോപ്പ് മാറ്റങ്ങള്‍ക്കു് 3D പിന്തുണ ആവശ്യമുണ്ടു്."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "സാധാരണ ഗ്നോം പണിയിടം മാത്രമേ ലഭ്യമുള്ളൂ"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "ദയവായി compiz-gnome അല്ലെങ്കില്‍ gnome-shell ഇന്‍സ്റ്റോള്‍ ചെയ്യുക."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -104,15 +104,15 @@ msgstr "<b>ഡസ്ക്-ടോപ്പ് മാറ്റങ്ങള്‍<
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D-ആക്സിലറേറ്റഡ് കണ്ണിനു് സുഖമേകുന്ന ഡസ്ക്ടോപ്പ്</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>GNOME 3.0 യൂസര്‍ ഇന്റര്‍ഫെയിസ് തിരനോട്ടം</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>ലോ-എന്‍ഡ് സിസ്റ്റമുകള്‍ക്കുള്ള സാധാരണ ഗ്രാഫിക്സ്</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -124,15 +124,13 @@ msgstr "ഒരു ക്യൂബിലുളള പണിയിടങ്ങള�
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "ഗ്നോം ഷെല്‍"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "_നിലവാരമുള്ള"
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "ഡസ്ക്-ടോപ്പ് മാറ്റങ്ങള്‍ സജ്ജമാക്കുക (_E)"
