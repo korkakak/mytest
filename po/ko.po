@@ -1,24 +1,24 @@
-# translation of ko.po to Korean
+# translation of desktop-effects.master.po to Korean
 # Korean translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2006.
-# Eunju Kim <eukim@redhat.com>, 2006.
 #
+# Automatically generated, 2006.
+# Eunju Kim <eukim@redhat.com>, 2006, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: ko\n"
+"Project-Id-Version: desktop-effects.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-11-30 17:25+1000\n"
+"PO-Revision-Date: 2009-09-03 13:43+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
@@ -58,44 +58,44 @@ msgstr "설정 유지(_K)"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "이전 설정을 복구할 수 없습니다. 포기합니다.  "
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "이전 설정을 복구할 수 없습니다. 표준 GNOME 데스크탑으로 전환합니다.  "
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "메타시티 (Metacity)를 시작할 수 없습니다. 이전 설정으로 되돌아 갑니다.    "
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Compiz를 시작할 수 없습니다. 이전 설정으로 되돌아 갑니다.   "
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "GNOME 쉘을 시작할 수 없습니다. 이전 설정으로 되돌아 갑니다.   "
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "3D 그래픽 가속 기능을 사용할 수 없습니다   "
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "데스크탑 효과에는 하드웨어 3D 지원이 필요합니다.   "
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "표준 GNOME 데스크탑만을 사용할 수 있습니다   "
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "compiz-gnome 또는 gnome-shell을 설치해 주십시오.  "
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
-msgstr "데스크탑 효과"
+msgstr "데스크탑 효과  "
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
@@ -107,15 +107,15 @@ msgstr "<b>데스크탑 효과</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D-가속 시각적 효과를 갖는 데스크탑</i> "
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>GNOME 3.0 사용자 인터페이스 미리보기</i>  "
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>단순한 그래픽, 로 엔드 머신에 적합</i> "
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -127,15 +127,13 @@ msgstr "입방체에서의 작업 공간(_u)"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz "
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "_GNOME 쉘  "
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "표준 (_S)  "
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "데스크탑 효과 활성화(_E)"
