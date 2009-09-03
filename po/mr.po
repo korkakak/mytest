@@ -1,23 +1,24 @@
-# translation of mr.po to Marathi
+# translation of desktop-effects.master.po to Marathi
 # Marathi translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+#
 # Automatically generated, 2006.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
-#
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mr\n"
+"Project-Id-Version: desktop-effects.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-12-01 17:37+0530\n"
-"Last-Translator: Rahul Bhalerao <b.rahul.pm@gmail.com>\n"
-"Language-Team: Marathi\n"
+"PO-Revision-Date: 2009-09-03 18:37+0530\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
@@ -54,40 +55,40 @@ msgstr "रचना असू द्या(_K)"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "जुणी संयोजना पूर्वस्थितीत आनण्यास अशक्य. त्याग करत आहे."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "जुणी संयोजना पूर्वस्थितीत आनण्यास अशक्य. मानक GNOME डेस्कटॉप वापरत आहे."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Metacity सुरू करण्यास अपयशी. पूर्वीची संयोजना वापरणार."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Compiz सुरू करण्यास अपयशी. पूर्वीची संयोजना वापरणार."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "GNOME Shell सुरू करण्यास अपयशी. पूर्वीची संयोजना वापरणार."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "Accelerated 3D ग्राफिक्स् उपलब्ध नाही"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "डेस्कटॉप प्रभावाला हार्डवेअर 3D समर्थन आवश्यक आहे."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "फक्त मानक GNOME डेस्कटॉप उपलब्ध आहे"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "कृपया compiz-gnome किंवा gnome-shell प्रतिष्ठापीत करा."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -103,15 +104,15 @@ msgstr "<b>कार्यस्थळ प्रभाव</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D-एक्सीलरेटेड दृष्यास्पद-पटणारे डेस्कटॉप</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>GNOME 3.0 वापरकर्ता संवादचे पूर्वदृष्य</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>सोपे ग्राफीक्स्, लो-एंड मशीनस् करीता योग्य</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -123,15 +124,13 @@ msgstr "कार्यक्षेत्रे घनावर (_u)"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "Compiz (_C)"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "GNOME Shell (_G)"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "मानक (_S)"
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "कार्यस्थळ प्रभाव कार्यान्वित करा(_E)"
