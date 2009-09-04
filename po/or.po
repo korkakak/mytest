@@ -1,23 +1,24 @@
-# translation of or.po to Oriya
+# translation of desktop-effects.master.or.po to Oriya
 # Oriya translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Automatically generated, 2006.
 # Subhransu Behera <sbehera@redhat.com>, 2006.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: or\n"
+"Project-Id-Version: desktop-effects.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-11-30 12:36+0530\n"
-"Last-Translator: Subhransu Behera <sbehera@redhat.com>\n"
-"Language-Team: Oriya <oriya-group@lists.sarovar.org>\n"
+"PO-Revision-Date: 2009-09-05 00:09+0530\n"
+"Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
+"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
 
 # Remove this line or KBabel regards it as an invalid header
@@ -30,10 +31,8 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] ""
-"ନୂତନ ବିନ୍ଯାସ ପରୀକ୍ଷଣ କରୁଅଛି। ଆପଣ %d ସେକେଣ୍ଡରେ କିଛି ନ କଲେ ପୂର୍ବ ବିନ୍ଯାସଟି ପୁନଃସ୍ଥାପିତହୋଇଯିବ।"
-msgstr[1] ""
-"ନୂତନ ବିନ୍ଯାସ ପରୀକ୍ଷଣ କରୁଅଛି। ଆପଣ %d ସେକେଣ୍ଡରେ କିଛି ନ କଲେ ପୂର୍ବ ବିନ୍ଯାସଟି ପୁନଃସ୍ଥାପିତହୋଇଯିବ।"
+msgstr[0] "ନୂତନ ବିନ୍ଯାସ ପରୀକ୍ଷଣ କରୁଅଛି। ଆପଣ %d ସେକେଣ୍ଡରେ କିଛି ନ କଲେ ପୂର୍ବ ବିନ୍ଯାସଟି ପୁନଃସ୍ଥାପିତହୋଇଯିବ।"
+msgstr[1] "ନୂତନ ବିନ୍ଯାସ ପରୀକ୍ଷଣ କରୁଅଛି। ଆପଣ %d ସେକେଣ୍ଡରେ କିଛି ନ କଲେ ପୂର୍ବ ବିନ୍ଯାସଟି ପୁନଃସ୍ଥାପିତହୋଇଯିବ।"
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
@@ -53,40 +52,40 @@ msgstr "ଏହି ବିନ୍ଯାସ ରଖନ୍ତୁ (_K)"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "ପୁରୁଣା ସଂରଚନାଗୁଡ଼ିକୁ ପୁନଃସ୍ଥାପନ କରିପାହେଲା ନାହିଁ। ପରିତ୍ୟାଗ କରୁଅଛି।"
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "ପୁରୁଣା ସଂରଚନାକୁ ପୁନଃସ୍ଥାପନ କରିପାରିଲା ନାହିଁ। ମାନକ GNOME ଡେସ୍କଟପକୁ ସ୍ଥାନାନ୍ତରିତ କରୁଅଛି।"
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Metacity ଆରମ୍ଭ କରିବାରେ ବିଫଳ। ପୂର୍ବ ବିନ୍ୟାସଗୁଡ଼ିକୁ ପ୍ରତ୍ୟାବୃତ କରୁଅଛି।"
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Compiz ଆରମ୍ଭ କରିବାରେ ବିଫଳ। ପୂର୍ବ ବିନ୍ୟାସଗୁଡ଼ିକୁ ପ୍ରତ୍ୟାବୃତ କରୁଅଛି।"
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "GNOME ସେଲ ଆରମ୍ଭ କରିବାରେ ବିଫଳ। ପୂର୍ବ ବିନ୍ୟାସଗୁଡ଼ିକୁ ପ୍ରତ୍ୟାବୃତ କରୁଅଛି।"
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "ତ୍ୱରିତ 3D ଆଲେଖୀ ଉପଲବ୍ଧ ନାହିଁ"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "ଡେସ୍କଟପ ପ୍ରଭାବଗୁଡ଼ିକ ହାର୍ଡୱେର 3D ସମର୍ଥନ ଆବଶ୍ୟକ କରିଥାଏ।"
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "କେବଳ ମାନକ GNOME ଡେସ୍କଟପ ଉପଲବ୍ଧ"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "ଦୟାକରି compiz-gnome ଅଥବା gnome-shell କୁ ସ୍ଥାପନ କରନ୍ତୁ।"
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -102,15 +101,15 @@ msgstr "<b>ଡେସ୍କଟପ ଇଫେକ୍ଟସ</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D-ତ୍ୱରିତ ଦୃଶ୍ୟମାନ-ଆବେଦକ ଡେସ୍କଟପ</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>GNOME 3.0 ଚାଳକ ଅନ୍ତରାପୃଷ୍ଠର ପ୍ରାକଦର୍ଶନ</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>ସରଳ ଆଲେଖୀ, ନିମ୍ନ-ମାନର ଯନ୍ତ୍ରଗୁଡ଼ିକ ପାଇଁ ଉପଯୁକ୍ତ</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -122,15 +121,13 @@ msgstr "ଗୋଟିଏ ବର୍ଗକ୍ଷେତ୍ରରେ କାର୍ଯ�
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "Compiz (_C)"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "GNOME ସେଲ (_G)"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "ମାନକ (_S)"
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "ଡେସ୍କଟପ ଇଫେକ୍ଟସକୁ ସକ୍ରିୟ କରନ୍ତୁ (_E)"
