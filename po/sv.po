@@ -3,14 +3,14 @@
 # Magnus Larsson <fedoratrans@gmail.com>, 2007, 2008.
 # Göran Uddeborg <goeran@uddeborg.se>, 2009.
 #
-# $Revision: 1.4 $
+# $Revision: 1.6 $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-04 21:48+0200\n"
+"PO-Revision-Date: 2009-09-06 16:47+0200\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -26,12 +26,8 @@ msgid ""
 msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
-msgstr[0] ""
-"Provar de nya inställningarna. Om du inte agerar inom %d sekund kommer de "
-"tidigare inställningarna användas."
-msgstr[1] ""
-"Provar de nya inställningarna. Om du inte agerar inom %d sekunder kommer de "
-"tidigare inställningarna användas."
+msgstr[0] "Provar de nya inställningarna. Om du inte bekräftar inom %d sekund kommer de tidigare inställningarna återställas."
+msgstr[1] "Provar de nya inställningarna. Om du inte bekräftar inom %d sekunder kommer de tidigare inställningarna återställas."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
@@ -55,11 +51,14 @@ msgstr "Kunde inte återställa gamla inställningar.  Ger upp."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr "Kunde inte återställa gamla inställningar.  Byter till standard-GNOME-skrivbord."
+msgstr ""
+"Kunde inte återställa gamla inställningar.  Byter till standard-GNOME-"
+"skrivbord."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr "Misslyckades att starta Metacity.  Återgår till tidigare inställningar."
+msgstr ""
+"Misslyckades att starta Metacity.  Återgår till tidigare inställningar."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
@@ -67,7 +66,8 @@ msgstr "Misslyckades att starta Compiz.  Återgår till tidigare inställningar.
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr "Misslyckades att starta GNOME-skal.  Återgår till tidigare inställningar."
+msgstr ""
+"Misslyckades att starta GNOME-skal.  Återgår till tidigare inställningar."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
@@ -100,7 +100,7 @@ msgstr "<b>Skrivbordseffekter</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr "<i>3D-accelererad visuellt tilltalande skrivbord</i>"
+msgstr "<i>3D-accelererat visuellt tilltalande skrivbord</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
@@ -124,7 +124,7 @@ msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr "_GNOME:s skal"
+msgstr "_GNOME-skal"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
