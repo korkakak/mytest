@@ -4,13 +4,14 @@
 #
 # Timo Trinks <ttrinks@redhat.com>, 2006.
 # Fabian Affolter <fab@fedoraproject.org>, 2009.
+# Thomas Spura <tomspur@fedoraproject.org>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-04-17 11:16+0100\n"
+"PO-Revision-Date: 2009-09-09 00:30+0200\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: German <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -55,40 +56,48 @@ msgstr "Einstellungen _beibehalten"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "Die alten Einstellungen konnten nicht wiederhergestellt werden. Ende."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
 msgstr ""
+"Die alten Einstellungen konnten nicht wiederhergestellt werden. GNOME "
+"Desktop wird als neuer Standard eingestellt."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
 msgstr ""
+"Metacity konnte nicht gestartet werden. Die vorherigen Einstellungen werden "
+"wieder eingestellt."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
 msgstr ""
+"Compiz konnte nicht gestartet werden. Die vorherigen Einstellungen werden "
+"wieder eingestellt."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
 msgstr ""
+"GNOME Shell konnte nicht gestartet werden. Die vorherigen Einstellungen "
+"werden wieder eingestellt."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "Beschleunigte 3D-Grafiken sind nicht verfügbar."
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "Desktop Effekte benötigen Hardware, die 3D unterstützt."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "Es ist nur der Standard GNOME Arbeitsplatz verfügbar."
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "Bitte installieren Sie compiz-gnome oder gnome-shell."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -104,15 +113,15 @@ msgstr "<b>Desktopeffekte</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D-beschleunigter, visuell ansprechender Arbeitsplatz</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>Vorschau auf die GNOME 3.0 Bedienoberfläche</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>Einfache Grafiken, nützlich für langsame Rechner</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -124,15 +133,15 @@ msgstr "Arbeitsflächen auf einem Wü_rfel"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "_GNOME Shell"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "_Standard"
 
 #~ msgid "Enable Desktop _Effects"
 #~ msgstr "Desktopeffekte aktivieren"
