@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-03-23 07:00+0100\n"
+"PO-Revision-Date: 2009-09-15 16:56+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -25,11 +25,11 @@ msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
 msgstr[0] ""
-"Afprøver nye indstillinger. Hvis du ikke svarer indenfor %d sekund vil "
-"tidligere indstillinger blive gendannet"
+"Tester nye indstillinger. Hvis du ikke foretager dig noget indenfor %d sekund vil "
+"tidligere indstillinger blive gendannet."
 msgstr[1] ""
-"Afprøver nye indstillinger. Hvis du ikke svarer indenfor %d sekunder vil "
-"tidligere indstillinger blive gendannet"
+"Tester nye indstillinger. Hvis du ikke foretager dig noget indenfor %d sekunder vil "
+"tidligere indstillinger blive gendannet."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
@@ -49,40 +49,40 @@ msgstr "Behold _indstillinger"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "Kunne ikke gendanne gamle indstillinger. Giver op."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "Kunne ikke gendanne gamle indstillinger. Skifter til standard-GNOME-skrivebord."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Kunne ikke starte Metacity. Vender tilbage til tidligere indstillinger."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Kunne ikke starte Compiz. Vender tilbage til tidligere indstillinger."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "Kunne ikke starte GNOME Shell. Vender tilbage til tidligere indstillinger."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "Accelereret 3D-grafik er ikke tilgængelig"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "Skrivebordseffekter kræver hardwareunderstøttelse af 3D."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "Kun standard-GNOME-skrivebord er tilgængeligt"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "Installér venligst compiz-gnome eller gnome-shell."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -98,15 +98,15 @@ msgstr "<b>Skrivebordseffekter</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>3D-accelereret visuelt tiltrækkende skrivebord</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>Smagsprøve på GNOME 3.0-brugergrænseflade</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>Simpel grafik, velegnet til ældre maskiner</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -118,15 +118,15 @@ msgstr "Vis arbejdsområder på en _kube"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "_GNOME Shell"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "_Standard"
 
 #~ msgid "Enable Desktop _Effects"
 #~ msgstr "Aktivér skrivebords_effekter"
