@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-18 13:02+0200\n"
+"PO-Revision-Date: 2009-09-19 19:34+0200\n"
 "Last-Translator: Tomasz Chrzczonowicz <chrzczonowicz@gmail.com>\n"
 "Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "Nie można przywrócić poprzednich ustawień."
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
 msgstr ""
 "Nie można przywrócić poprzednich ustawień. Przełączanie na standardowy "
-"pulpit GNOME-a."
+"pulpit GNOME."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
@@ -71,8 +71,7 @@ msgstr "Nie można uruchomić Compiza. Przywracanie poprzednich ustawień."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
-"Nie można uruchomić powłoki GNOME-a. Przywracanie poprzednich ustawień."
+msgstr "Nie można uruchomić GNOME Shell. Przywracanie poprzednich ustawień."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
@@ -85,7 +84,7 @@ msgstr "Efekty pulpitu wymagają sprzętowej obsługi 3D."
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr "Dostępny jest tylko standardowy pulpit GNOME-a"
+msgstr "Dostępny jest tylko standardowy pulpit GNOME"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
@@ -122,7 +121,7 @@ msgstr "<i>Atrakcyjny wizualnie pulpit korzystający z przyspieszenia 3D</i>"
 # --tch
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr "<i>Wersja orientacyjna interfejsu użytkownika z GNOME-a 3.0</i>"
+msgstr "<i>Wersja orientacyjna interfejsu użytkownika z GNOME 3.0</i>"
 
 # "grafika" przyjęło się mówić w odniesieniu do gier komputerowych, ale tutaj chyba nie pasuje. --tch
 #
@@ -145,7 +144,7 @@ msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr "_Powłoka GNOME-a"
+msgstr "_GNOME Shell"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
