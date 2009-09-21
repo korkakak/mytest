@@ -1,32 +1,23 @@
-# translation of it.po to 
-# translation of it.po to
-# Italian translations for PACKAGE package.
-# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2006.
-# , 2006.
-# , 2006.
-# , 2006.
-# , 2006.
-# , 2006.
-# , 2006.
-#
+# Italian translations for desktop-effects package.
+# Copyright (C) 2006 Red Hat, Inc.
+# This file is distributed under the same license as the desktop-effects package.
+# Pierro Silvio <perplesso82@gmail.com>, 2009.
+# Gianluca Sforna <giallu@fedoraproject.org>, 2009.
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-12-01 04:42+0100\n"
-"Last-Translator: \n"
-"Language-Team:  <it@li.org>\n"
+"PO-Revision-Date: 2009-09-03 00:15+0200\n"
+"Last-Translator: Gianluca Sforna <giallu@fedoraproject.org>\n"
+"Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.9.1\n"
 
-# Remove this line or KBabel regards it as an invalid header
-# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 #: ../desktop-effects.c:181
 #, c-format
 msgid ""
@@ -36,9 +27,11 @@ msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
 msgstr[0] ""
-"Test nuove impostazioni in corso. Se non eseguite alcuna azione entro %d "
-"secondi verranno ripristinate le impostazioni precedenti."
+"Test nuove impostazioni in corso. Se non si esegue alcuna azione entro %d "
+"secondo verranno ripristinate le impostazioni precedenti."
 msgstr[1] ""
+"Test nuove impostazioni in corso. Se non si esegue alcuna azione entro %d "
+"secondi verranno ripristinate le impostazioni precedenti."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
@@ -46,7 +39,7 @@ msgstr "Mantieni le impostazioni"
 
 #: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
-msgstr "Desiderate mantenere queste impostazioni?"
+msgstr "Si desidera mantenere queste impostazioni?"
 
 #: ../desktop-effects.c:253
 msgid "Use _previous settings"
@@ -54,44 +47,47 @@ msgstr "Utilizza le impostazioni _precedenti"
 
 #: ../desktop-effects.c:254
 msgid "_Keep settings"
-msgstr "(_K)Mantieni stesse impostazioni"
+msgstr "_Mantieni le impostazioni"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "Impossibile ripristinare le impostazioni precedenti. Rinuncio."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
 msgstr ""
+"Impossibile ripristinare le impostazioni precedenti. Attivazione del desktop "
+"standard di GNOME."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Avvio di Metacity fallito. Ripristino delle impostazioni precedenti."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Avvio di Compiz fallito. Ripristino delle impostazioni precedenti."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
 msgstr ""
+"Avvio di GNOME Shell fallito. Ripristino delle impostazioni precedenti."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "La grafica 3D accelerata non è disponibile"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "Gli effetti desktop richiedono il supporto 3D hardware."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "Il desktop standard di GNOME è l'unico disponibile"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "Installare compiz-gnome oppure gnome-shell."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -99,7 +95,7 @@ msgstr "Effetti desktop"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr "Seleziona effetti desktop"
+msgstr "Selezionare effetti desktop"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
@@ -107,19 +103,19 @@ msgstr "<b>Effetti Desktop</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>Desktop 3D-accelerated visually-appealing desktop</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>Anteprima della interfaccia utente di GNOME 3.0</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>Grafica semplificata, adatta a macchine poco potenti</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
-msgstr "Quando mosse le finestre (_W)ondeggiano"
+msgstr "Quando mosse le finestre _Ondeggiano"
 
 #: ../desktop-effects.glade.h:7
 msgid "Workspaces on a C_ube"
@@ -127,15 +123,15 @@ msgstr "Spazi di lavoro su di un C_ubo"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "_GNOME Shell"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "_Standard"
 
 #~ msgid "Enable Desktop _Effects"
 #~ msgstr "Abilita _Effetti desktop"
