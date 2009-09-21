@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects.master.pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-10 11:23+0530\n"
+"PO-Revision-Date: 2009-09-21 16:06+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "ਸੈਟਿੰਗ ਰੱਖੋ"
 
 #: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
-msgstr "ਕੀ ਤੁਸੀਂ ਇਸ ਸੈਟਿੰਗ ਰੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
+msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਸੈਟਿੰਗ ਰੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: ../desktop-effects.c:253
 msgid "Use _previous settings"
