@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2007-01-23 16:41+0200\n"
+"PO-Revision-Date: 2009-09-22 16:41+0200\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -52,40 +52,45 @@ msgstr "З_берегти параметри"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "Не вдається відновити попередні параметри настройки."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
 msgstr ""
+"Не вдається відновити полпереджні параметри. Буде виконано перемикання "
+"на стандартний робочий стіл GNOME."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
 msgstr ""
+"Не вдається запустити Metacity. Будуть відновлені попередні параметри."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Не вдається запустити Compiz. Будуть відновлені попередні параметри."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
 msgstr ""
+"Не вдається запустити оболонку GNOME. Будуть відновлені попередні параметри."
+"настройки."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "Прискорення графіки 3D недоступне"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "Для ефектів робочого столу потрібна апаратна підтримка 3D."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "Доступний лише стандартний робочий стіл GNOME"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "Встановіть compiz-gnome або gnome-shell."
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
@@ -101,15 +106,15 @@ msgstr "<b>Ефекти робочого столу</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>візуально привабливий робочий стіл з 3D-прискоренням</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>Попередній перегляд інтерфейсу користувача GNOME 3.0</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>Проста графіка. Підходить для молодших моделей комп'ютерів</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -121,15 +126,14 @@ msgstr "_Куб робочих столів"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "О_болонка GNOME"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "_Стандартний"
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "Увімкнути _ефекти"
+
