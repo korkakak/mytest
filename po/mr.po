@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-03 18:37+0530\n"
+"PO-Revision-Date: 2009-09-22 14:59+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,27 +31,27 @@ msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
 msgstr[0] ""
-"नविन रचना तपासत आहे. जर तुम्ही %d सेकंदात प्रतिसाद दिला नाही तर मागील रचना "
+"नविन संरचना तपासत आहे. जर तुम्ही %d सेकंदात प्रतिसाद दिला नाही तर मागील संरचना "
 "पुनःस्थापित होतील."
 msgstr[1] ""
-"नविन रचना तपासत आहे. जर तुम्ही %d सेकंदात प्रतिसाद दिला नाही तर मागील रचना "
+"नविन संरचना तपासत आहे. जर तुम्ही %d सेकंदात प्रतिसाद दिला नाही तर मागील संरचना "
 "पुनःस्थापित होतील."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
-msgstr "रचना असू द्या"
+msgstr "संरचना असू द्या"
 
 #: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
-msgstr "तुम्ही या रचना ठेऊ इच्छिता?"
+msgstr "तुम्ही या संरचना ठेऊ इच्छिता?"
 
 #: ../desktop-effects.c:253
 msgid "Use _previous settings"
-msgstr "मागील रचना वापरा(_p)"
+msgstr "मागील संरचना वापरा(_p)"
 
 #: ../desktop-effects.c:254
 msgid "_Keep settings"
-msgstr "रचना असू द्या(_K)"
+msgstr "संरचना असू द्या(_K)"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
@@ -92,15 +92,15 @@ msgstr "कृपया compiz-gnome किंवा gnome-shell प्रति
 
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
-msgstr "कार्यस्थळ प्रभाव"
+msgstr "डेस्कटॉप प्रभाव"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr "कार्यस्थळ प्रभाव निवडा"
+msgstr "डेस्कटॉप प्रभाव निवडा"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
-msgstr "<b>कार्यस्थळ प्रभाव</b>"
+msgstr "<b>डेस्कटॉप प्रभाव</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
@@ -116,7 +116,7 @@ msgstr "<i>सोपे ग्राफीक्स्, लो-एंड मश�
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
-msgstr "खिडक्या हलवत असताना डुगडुगतात(_W)"
+msgstr "पटल हलवतांना डुगडुगतात (_W)"
 
 #: ../desktop-effects.glade.h:7
 msgid "Workspaces on a C_ube"
