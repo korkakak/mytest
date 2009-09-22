@@ -1,14 +1,14 @@
 # translation of pl.po to Polish
 # Piotr Drąg <piotrdrag@gmail.com>, 2006.
-#
 # Tomasz Chrzczonowicz <chrzczonowicz@gmail.com>, 2009.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-19 19:34+0200\n"
-"Last-Translator: Tomasz Chrzczonowicz <chrzczonowicz@gmail.com>\n"
+"PO-Revision-Date: 2009-09-22 17:48+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,22 +25,22 @@ msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
 msgstr[0] ""
-"Testowanie nowych ustawień. Jeśli nie odpowiesz w ciągu %d sekundy, "
+"Testowanie nowych ustawień. W przypadku braku odpowiedzi w ciągu %d sekundy, "
 "przywrócone zostaną poprzednie ustawienia."
 msgstr[1] ""
-"Testowanie nowych ustawień. Jeśli nie odpowiesz w ciągu %d sekund, "
+"Testowanie nowych ustawień. W przypadku braku odpowiedzi w ciągu %d sekund, "
 "przywrócone zostaną poprzednie ustawienia."
 msgstr[2] ""
-"Testowanie nowych ustawień. Jeśli nie odpowiesz w ciągu %d sekund, "
+"Testowanie nowych ustawień. W przypadku braku odpowiedzi w ciągu %d sekund, "
 "przywrócone zostaną poprzednie ustawienia."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
-msgstr "Zatrzymaj ustawienia"
+msgstr "Zatrzymanie ustawień"
 
 #: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
-msgstr "Czy chcesz zatrzymać te ustawienia?"
+msgstr "Zatrzymać te ustawienia?"
 
 #: ../desktop-effects.c:253
 msgid "Use _previous settings"
@@ -54,7 +54,6 @@ msgstr "_Zatrzymaj ustawienia"
 msgid "Could not restore old settings. Giving up."
 msgstr "Nie można przywrócić poprzednich ustawień."
 
-# Aż takie stare te ustawienia nie są... :) --tch
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
 msgstr ""
@@ -63,15 +62,18 @@ msgstr ""
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr "Nie można uruchomić Metacity. Przywracanie poprzednich ustawień."
+msgstr ""
+"Nie można uruchomić programu Metacity. Przywracanie poprzednich ustawień."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr "Nie można uruchomić Compiza. Przywracanie poprzednich ustawień."
+msgstr ""
+"Nie można uruchomić programu Compiz. Przywracanie poprzednich ustawień."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr "Nie można uruchomić GNOME Shell. Przywracanie poprzednich ustawień."
+msgstr ""
+"Nie można uruchomić programu GNOME Shell. Przywracanie poprzednich ustawień."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
@@ -79,7 +81,7 @@ msgstr "Przyspieszona grafika 3D jest niedostępna"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr "Efekty pulpitu wymagają sprzętowej obsługi 3D."
+msgstr "Efekty graficzne pulpitu wymagają sprzętowej obsługi 3D."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
@@ -88,44 +90,28 @@ msgstr "Dostępny jest tylko standardowy pulpit GNOME"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr "Zainstaluj pakiet compiz-gnome lub gnome-shell."
+msgstr "Proszę zainstalować pakiet compiz-gnome lub gnome-shell."
 
-# Co to jest "efekt pulpitu"? --tch
 #: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
 msgstr "Efekty pulpitu"
 
 #: ../desktop-effects.desktop.in.h:2
 msgid "Select desktop effects"
-msgstr "Wybór efektów graficznych dla pulpitu"
+msgstr "Wybór efektów graficznych pulpitu"
 
 #: ../desktop-effects.glade.h:1
 msgid "<b>Desktop Effects</b>"
 msgstr "<b>Efekty pulpitu</b>"
 
-# Urzekający to taki, który wzbudza podziw, zachwyt. No bez przesady... :)
-# Visually-appealing nie jest aż tak mocne. 
-# Ew. "miły dla oka" --tch
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
 msgstr "<i>Atrakcyjny wizualnie pulpit korzystający z przyspieszenia 3D</i>"
 
-# Ew. poglądowa. Preview to nie testowanie.
-#
-# "interfejsu użytkownika GNOME 3.0" sugeruje, że GNOME jest interfejsem użytkownika albo użytkownikiem
-#
-# Gnome (btw. teraz już nie akronim od GNU Network Object Model Environment i autorzy mówią, by nie pisać wielkimi, ale ludzie nie wiedzą) nie jest interfejsem, tylko środowiskiem graficznym.
-#
-# ew. " interfejsu użytkownika ze środowiska GNOME w wersji 3.0", ale to już za długie.
-#
-# --tch
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr "<i>Wersja orientacyjna interfejsu użytkownika z GNOME 3.0</i>"
+msgstr "<i>Podgląd interfejsu użytkownika GNOME 3.0</i>"
 
-# "grafika" przyjęło się mówić w odniesieniu do gier komputerowych, ale tutaj chyba nie pasuje. --tch
-#
-# Wstawiłem "pulpit", by było analogicznie do tego wyżej. Ew. "prosty wygląd".
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
 msgstr "<i>Prosty pulpit, odpowiedni dla wolniejszych komputerów</i>"
