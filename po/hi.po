@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: desktop-effects.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-02 12:29+0530\n"
+"PO-Revision-Date: 2009-09-22 16:29+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
 "MIME-Version: 1.0\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 "\n"
 "\n"
 
@@ -33,15 +34,15 @@ msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
 msgstr[0] ""
-"नया सेटिंग जांच रहा है. अगर आप %d सेकेंड में अनुक्रिया नहीं देते हैं तो पिछला सेटिंग फिर "
+"नई सेटिंग जांच रहा है. अगर आप %d सेकेंड में अनुक्रिया नहीं देते हैं तो पिछला सेटिंग फिर "
 "भंडारित कर दिया जायेगा."
 msgstr[1] ""
-"नया सेटिंग जांच रहा है. अगर आप %d सेकेंडों में अनुक्रिया नहीं देते हैं तो पिछला सेटिंग फिर "
+"नई सेटिंग जांच रहा है. अगर आप %d सेकेंडों में अनुक्रिया नहीं देते हैं तो पिछला सेटिंग फिर "
 "भंडारित कर दिया जायेगा"
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
-msgstr "सेटिंग बनाये रखें"
+msgstr "सेटिंग बनाए रखें"
 
 #: ../desktop-effects.c:231
 msgid "Do you want to keep these settings?"
@@ -69,7 +70,7 @@ msgstr "मेटासिटी आरंभ करने में विफ�
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr "Compiz आरंभ करने में विफल. पिछली सेटिंग में वापस जा रहा है."
+msgstr "कोंपिज आरंभ करने में विफल. पिछली सेटिंग में वापस जा रहा है."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
@@ -77,7 +78,7 @@ msgstr "गनोम शेल आरंभ करने में विफल.
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr "त्वरित 3D आलेखी उपलब्ध नहीं है"
+msgstr "त्वरित 3डी आलेखी उपलब्ध नहीं है"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
@@ -86,7 +87,7 @@ msgstr "डेस्कटॉप प्रभाव के लिए हार�
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr "केवल मानक GNOME उपलब्ध है"
+msgstr "केवल मानक गनोम उपलब्ध है"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
@@ -106,11 +107,11 @@ msgstr "<b>डेस्कटॉप प्रभाव</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr "<i>3D-त्वरित सुदर्शन डेस्कटॉप</i>"
+msgstr "<i>3डी-त्वरित सुदर्शन डेस्कटॉप</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr "<i>GNOME 3.0 उपयोक्ता अंतरफलक का पूर्वावलोकन</i>"
+msgstr "<i>गनोम 3.0 उपयोक्ता अंतरफलक का पूर्वावलोकन</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
@@ -126,7 +127,7 @@ msgstr "चौकोर में कार्यस्थान (_u)"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr "_Compiz"
+msgstr "कोंपिज (_C)"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
