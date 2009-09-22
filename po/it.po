@@ -1,22 +1,24 @@
+# translation of desktop-effects.po to
 # Italian translations for desktop-effects package.
 # Copyright (C) 2006 Red Hat, Inc.
 # This file is distributed under the same license as the desktop-effects package.
 # Pierro Silvio <perplesso82@gmail.com>, 2009.
 # Gianluca Sforna <giallu@fedoraproject.org>, 2009.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: it\n"
+"Project-Id-Version: desktop-effects\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-03 00:15+0200\n"
-"Last-Translator: Gianluca Sforna <giallu@fedoraproject.org>\n"
-"Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
+"PO-Revision-Date: 2009-09-22 14:00+1000\n"
+"Last-Translator: \n"
+"Language-Team:  <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../desktop-effects.c:181
 #, c-format
@@ -69,8 +71,7 @@ msgstr "Avvio di Compiz fallito. Ripristino delle impostazioni precedenti."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
-"Avvio di GNOME Shell fallito. Ripristino delle impostazioni precedenti."
+msgstr "Avvio di GNOME Shell fallito. Ripristino delle impostazioni precedenti."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
@@ -103,7 +104,7 @@ msgstr "<b>Effetti Desktop</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr "<i>Desktop 3D-accelerated visually-appealing desktop</i>"
+msgstr "<i>Desktop 3D-accelerati visually-appealing</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
@@ -133,5 +134,3 @@ msgstr "_GNOME Shell"
 msgid "_Standard"
 msgstr "_Standard"
 
-#~ msgid "Enable Desktop _Effects"
-#~ msgstr "Abilita _Effetti desktop"
