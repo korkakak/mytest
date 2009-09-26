@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-22 17:48+0200\n"
+"PO-Revision-Date: 2009-09-26 09:48+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgstr "<i>Atrakcyjny wizualnie pulpit korzystający z przyspieszenia 3D</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr "<i>Podgląd interfejsu użytkownika GNOME 3.0</i>"
+msgstr "<i>Wersja orientacyjna interfejsu użytkownika GNOME 3.0</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
