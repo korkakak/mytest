@@ -8,31 +8,24 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2006-11-29 16:41+0000\n"
-"Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
+"PO-Revision-Date: 2009-11-02 18:15+0200\n"
+"Last-Translator: \n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Greek\n"
 
 # Remove this line or KBabel regards it as an invalid header
 # "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 #: ../desktop-effects.c:181
 #, c-format
-msgid ""
-"Testing the new settings. If you don't respond in %d second the previous "
-"settings will be restored."
-msgid_plural ""
-"Testing the new settings. If you don't respond in %d seconds the previous "
-"settings will be restored."
-msgstr[0] ""
-"Γίνεται έλεγχος των νέων ρυθμίσεων. Αν δεν υπάρξει απάντηση σε %d "
-"δευτερόλεπτο, θα αποκατασταθούν οι προηγούμενες ρυθμίσεις."
-msgstr[1] ""
-"Γίνεται έλεγχος των νέων ρυθμίσεων. Αν δεν υπάρξει απάντηση σε %d "
-"δευτερόλεπτα, θα αποκατασταθούν οι προηγούμενες ρυθμίσεις."
+msgid "Testing the new settings. If you don't respond in %d second the previous settings will be restored."
+msgid_plural "Testing the new settings. If you don't respond in %d seconds the previous settings will be restored."
+msgstr[0] "Γίνεται έλεγχος των νέων ρυθμίσεων. Αν δεν υπάρξει απάντηση σε %d δευτερόλεπτο, θα αποκατασταθούν οι προηγούμενες ρυθμίσεις."
+msgstr[1] "Γίνεται έλεγχος των νέων ρυθμίσεων. Αν δεν υπάρξει απάντηση σε %d δευτερόλεπτα, θα αποκατασταθούν οι προηγούμενες ρυθμίσεις."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
@@ -52,42 +45,43 @@ msgstr "_Διατήρηση ρυθμίσεων"
 
 #: ../desktop-effects.c:585
 msgid "Could not restore old settings. Giving up."
-msgstr ""
+msgstr "Αδυναμία επαναφοράς παλαιών ρυθμίσεων. Εγκατάλειψη προσπάθειας."
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr ""
+msgstr "Αδυναμία επαναφοράς παλαιών ρυθμίσεων. Γίνεται επθιστροφή στο τυπική επιφάνεια εργασίας GNOME"
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
-msgstr ""
+msgstr "Αποτυχία εκκίνησης Metacity. Επιστροφή στις προηγούμενες ρυθμίσεις."
 
 #: ../desktop-effects.c:604
 msgid "Failed to start Compiz. Reverting to previous settings."
-msgstr ""
+msgstr "Αποτυχία εκκίνησης Compiz. Επιστροφή στις προηγούμενες ρυθμίσεις."
 
 #: ../desktop-effects.c:607
 msgid "Failed to start GNOME Shell. Reverting to previous settings."
-msgstr ""
+msgstr "Αποτυχία εκκίνησης GNOME Shell. Επιστροφή στις προηγούμενες ρυθμίσεις."
 
 #: ../desktop-effects.c:1066
 msgid "Accelerated 3D graphics is not available"
-msgstr ""
+msgstr "Δεν είναι διαθέσιμη η επιτάχυνση 3D γραφικών"
 
 #: ../desktop-effects.c:1067
 msgid "Desktop effects require hardware 3D support."
-msgstr ""
+msgstr "Τα εφέ επιφάνειας εργασίας απαιτούν υποστήριξη υλικού 3D."
 
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr ""
+msgstr "Μόνο η τυπική επιφάνεια εργασίας του GNOME είναι διαθέσιμη"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
-msgstr ""
+msgstr "Παρακαλώ εγκαταστήστε το compiz-gnome ή το gnome-shell."
 
-#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
+#: ../desktop-effects.desktop.in.h:1
+#: ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
 msgstr "Εφέ επιφάνειας εργασίας"
 
@@ -101,15 +95,15 @@ msgstr "<b>Εφέ επιφάνειας εργασίας</b>"
 
 #: ../desktop-effects.glade.h:2
 msgid "<i>3D-accelerated visually-appealing desktop</i>"
-msgstr ""
+msgstr "<i>Επιφάνεια εργασίας με επιτάχυνση 3D</i>"
 
 #: ../desktop-effects.glade.h:3
 msgid "<i>Preview of GNOME 3.0 user interface</i>"
-msgstr ""
+msgstr "<i>Προεπισκόπηση του περιβάλλοντος χρήσης του GNOME 3.0</i>"
 
 #: ../desktop-effects.glade.h:4
 msgid "<i>Simple graphics, suitable for low-end machines</i>"
-msgstr ""
+msgstr "<i>Απλά γραφικά, κατάλληλα για συστήματα χαμηλών δυνατοτήτων</i>"
 
 #: ../desktop-effects.glade.h:6
 msgid "Windows _Wobble when Moved"
@@ -121,15 +115,16 @@ msgstr "Χώροι εργασίας σε _κύβο"
 
 #: ../desktop-effects.glade.h:8
 msgid "_Compiz"
-msgstr ""
+msgstr "_Compiz"
 
 #: ../desktop-effects.glade.h:9
 msgid "_GNOME Shell"
-msgstr ""
+msgstr "_GNOME Shell"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr ""
+msgstr "_Τυπική"
 
 #~ msgid "Enable Desktop _Effects"
 #~ msgstr "Ε_νεργοποίηση εφέ επιφάνειας εργασίας"
+
