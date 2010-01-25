@@ -6,23 +6,34 @@ msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-01 14:29-0400\n"
-"PO-Revision-Date: 2009-09-10 12:02+0100\n"
-"Last-Translator: Dušan Hokův <dusan@mirc.cz>\n"
-"Language-Team: Czech\n"
+"PO-Revision-Date: 2010-01-25 19:04+0100\n"
+"Last-Translator: Michal Schmidt <mschmidt@redhat.com>\n"
+"Language-Team: Czech <fedora-cs-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"X-Generator: KBabel 1.10.2\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../desktop-effects.c:181
 #, c-format
-msgid "Testing the new settings. If you don't respond in %d second the previous settings will be restored."
-msgid_plural "Testing the new settings. If you don't respond in %d seconds the previous settings will be restored."
-msgstr[0] "Test nového nastavení. Pokud neprovedete žádnou akci do %d sekundy, bude použito předchozí nastavení."
-msgstr[1] "Test nového nastavení. Pokud neprovedete žádnou akci do %d sekund, bude použito předchozí nastavení."
-msgstr[2] "Test nového nastavení. Pokud neprovedete žádnou akci do %d sekund, bude použito předchozí nastavení."
+msgid ""
+"Testing the new settings. If you don't respond in %d second the previous "
+"settings will be restored."
+msgid_plural ""
+"Testing the new settings. If you don't respond in %d seconds the previous "
+"settings will be restored."
+msgstr[0] ""
+"Test nového nastavení. Pokud neprovedete žádnou akci do %d sekundy, bude "
+"použito předchozí nastavení."
+msgstr[1] ""
+"Test nového nastavení. Pokud neprovedete žádnou akci do %d sekund, bude "
+"použito předchozí nastavení."
+msgstr[2] ""
+"Test nového nastavení. Pokud neprovedete žádnou akci do %d sekund, bude "
+"použito předchozí nastavení."
 
 #: ../desktop-effects.c:225
 msgid "Keep Settings"
@@ -46,7 +57,7 @@ msgstr "Nelze obnovit staré nastavení. "
 
 #: ../desktop-effects.c:593
 msgid "Could not restore old settings. Switching to standard GNOME Desktop."
-msgstr "Nelze obnovit staré nastavení. Přepínám na standartní Gnome desktop."
+msgstr "Nelze obnovit staré nastavení. Přepínám na standardní Gnome desktop."
 
 #: ../desktop-effects.c:601
 msgid "Failed to start Metacity. Reverting to previous settings."
@@ -71,14 +82,13 @@ msgstr "Efekty desktopu vyžadují hardwarovou podporu 3D."
 #. compiz-gnome and gnome-shell are package names and should not be translated
 #: ../desktop-effects.c:1074
 msgid "Only the standard GNOME desktop is available"
-msgstr "Je dostupný pouze standartní GNOME desktop"
+msgstr "Je dostupný pouze standardní GNOME desktop"
 
 #: ../desktop-effects.c:1075
 msgid "Please install compiz-gnome or gnome-shell."
 msgstr "Prosím nainstalujte compiz-gnome nebo gnome-shell."
 
-#: ../desktop-effects.desktop.in.h:1
-#: ../desktop-effects.glade.h:5
+#: ../desktop-effects.desktop.in.h:1 ../desktop-effects.glade.h:5
 msgid "Desktop Effects"
 msgstr "Efekty desktopu"
 
@@ -120,8 +130,7 @@ msgstr "_GNOME Shell"
 
 #: ../desktop-effects.glade.h:10
 msgid "_Standard"
-msgstr "_Standartní"
+msgstr "_Standardní"
 
 #~ msgid "Enable Desktop _Effects"
 #~ msgstr "Povolit _Efekty desktopu"
-
